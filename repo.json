@@ -3,5 +3,7 @@
   "sourceName": "GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
   "sourceDescription": "Public IPA Repository for GBox",
-  "appRepositories": []
+  "appRepositories": [
+    "https://gkuhtov.github.io/GeraStore/apps/apps.json"
+  ]
 }
