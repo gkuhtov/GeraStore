@@ -1,9 +1,37 @@
 {
-  "version": "1.0",
-  "sourceName": "GeraStore",
-  "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
-  "sourceDescription": "Public IPA Repository for GBox",
-  "appRepositories": [
-    "https://gkuhtov.github.io/GeraStore/apps/apps.json"
+  "name": "GeraStore",
+  "identifier": "com.gkuhtov.gerastore",
+  "subtitle": "Public IPA Repository",
+  "description": "Каталог IPA приложений для GBox и совместимых клиентов.",
+  "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
+  "website": "https://gkuhtov.github.io/GeraStore/",
+  "sourceURL": "https://gkuhtov.github.io/GeraStore/repo.json",
+  "featuredApps": [],
+  "news": [],
+  "apps": [
+    {
+      "name": "Test App",
+      "bundleIdentifier": "com.gerastore.test",
+      "developerName": "GeraStore",
+      "subtitle": "Тестовое приложение",
+      "localizedDescription": "Первое тестовое приложение репозитория GeraStore.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
+      "tintColor": "#2F80ED",
+      "category": "Utilities",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-07-28T00:00:00Z",
+          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/test.ipa",
+          "size": 0,
+          "localizedDescription": "Первая тестовая версия."
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "screenshots": []
+    }
   ]
 }
