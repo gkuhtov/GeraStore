@@ -1,15 +1,24 @@
 {
   "apps": [
     {
-      "name": "Test App",
-      "bundleIdentifier": "com.gerastore.test",
-      "developerName": "GeraStore",
-      "subtitle": "Тестовое приложение",
-      "description": "Тестовая программа для проверки магазина.",
-      "icon": "test.png",
-      "category": "Utilities",
-      "ipa": "test.ipa",
-      "version": "1.0"
+      "name": "Radarbot",
+      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
+      "developerName": "Radarbot",
+      "subtitle": "Radarbot Pro",
+      "localizedDescription": "Радар-детектор с предупреждениями о камерах и опасностях.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
+      "tintColor": "#2F80ED",
+      "category": "Navigation",
+      "versions": [
+        {
+          "version": "9.43",
+          "date": "2026-07-28",
+          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
+          "size": 148911591,
+          "localizedDescription": "Radarbot Pro версия 9.43"
+        }
+      ],
+      "screenshots": []
     }
   ]
 }
