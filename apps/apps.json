@@ -1,3 +1,15 @@
 {
-  "apps": []
+  "apps": [
+    {
+      "name": "Test App",
+      "bundleIdentifier": "com.gerastore.test",
+      "developerName": "GeraStore",
+      "subtitle": "Тестовое приложение",
+      "description": "Тестовая программа для проверки магазина.",
+      "icon": "test.png",
+      "category": "Utilities",
+      "ipa": "test.ipa",
+      "version": "1.0"
+    }
+  ]
 }
