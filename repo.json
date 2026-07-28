@@ -1,30 +1,20 @@
 {
   "name": "GeraStore",
   "identifier": "com.gkuhtov.gerastore",
-  "subtitle": "IPA Repository",
-  "description": "Каталог IPA приложений для GBox.",
-  "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
-  "website": "https://gkuhtov.github.io/GeraStore/",
-  "sourceURL": "https://gkuhtov.github.io/GeraStore/repo.json",
-  "featuredApps": [],
-  "news": [],
   "apps": [
     {
-      "name": "Test App",
-      "bundleIdentifier": "com.gerastore.test",
-      "developerName": "GeraStore",
-      "subtitle": "Тестовое приложение",
-      "localizedDescription": "Тестовая программа для проверки магазина.",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/test.png",
-      "category": "Utilities",
-      "screenshots": [],
+      "name": "Radarbot Pro",
+      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
+      "developerName": "Radarbot",
+      "subtitle": "Радар-детектор и предупреждения о камерах",
+      "localizedDescription": "Radarbot Pro версия 9.43",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
       "versions": [
         {
-          "version": "1.0",
-          "date": "2026-07-28T12:24:56.516264Z",
-          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/test.ipa",
-          "size": 0,
-          "localizedDescription": "Последняя версия."
+          "version": "9.43",
+          "date": "2026-07-28",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/radarbot-9.43/Radarbot.ipa",
+          "size": 148911591
         }
       ]
     }
