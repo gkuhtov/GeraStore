@@ -1,23 +1,9 @@
-{
-  "apps": [
-    {
-      "name": "Radarbot Pro",
-      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
-      "developerName": "Radarbot",
-      "subtitle": "Радар-детектор и предупреждения о камерах",
-      "localizedDescription": "Radarbot Pro версия 9.43. Предупреждает о камерах, радарах и опасностях на дороге.",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
-      "tintColor": "#2F80ED",
-      "category": "Navigation",
-      "versions": [
-        {
-          "version": "9.43",
-          "date": "2026-07-28",
-          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
-          "size": 148911591,
-          "localizedDescription": "Radarbot Pro версия 9.43"
-        }
-      ]
-    }
-  ]
-}
+"versions": [
+  {
+    "version": "9.43",
+    "date": "2026-07-28",
+    "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/radarbot-9.43/Radarbot.ipa",
+    "size": 148911591,
+    "localizedDescription": "Radarbot Pro версия 9.43"
+  }
+]
