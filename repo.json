@@ -6,7 +6,7 @@
       "name": "Radarbot Pro",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "Radarbot",
-      "subtitle": "Радар-детектор и предупреждения о камерах",
+      "localizedDescription": "Radarbot Pro — интеллектуальный радар-детектор. Показывает камеры контроля скорости, предупреждает об опасностях на дороге, радарах и постах ДПС. Влюбом случаее мусоров проверяй.",
       "localizedDescription": "Radarbot Pro версия 9.43",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
       "versions": [
