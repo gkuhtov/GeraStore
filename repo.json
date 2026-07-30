@@ -1,4 +1,9 @@
 {
+  "version": "1.0",
+  "sourceName": "GeraStore",
+  "sourceAuthor": "ГЕРЫЧ",
+  "sourceDescription": "Каталог IPA приложений для GBox.",
+  "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
   "name": "GeraStore",
   "identifier": "com.gkuhtov.gerastore",
   "subtitle": "IPA Repository",
@@ -6,10 +11,15 @@
   "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
   "website": "https://gkuhtov.github.io/GeraStore/",
   "sourceURL": "https://gkuhtov.github.io/GeraStore/repo.json",
-  "featuredApps": [],
-  "news": [],
   "apps": [
     {
+      "appType": "SELF_SIGN",
+      "versionDate": "2026-07-29",
+      "appName": "Board Adventure",
+      "appVersion": "3.5.2590",
+      "appDescription": "играе ебагая",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
+      "appPackage": "довнлд.урд",
       "name": "Board Adventure",
       "bundleIdentifier": "com.moonactive.cmboard",
       "developerName": "ГЕРЫЧ",
@@ -18,6 +28,9 @@
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
       "category": "Games",
       "screenshots": [],
+      "version": "3.5.2590",
+      "downloadURL": "довнлд.урд",
+      "size": 127183823,
       "versions": [
         {
           "version": "3.5.2590",
@@ -29,6 +42,13 @@
       ]
     },
     {
+      "appType": "SELF_SIGN",
+      "versionDate": "2026-07-30",
+      "appName": "Radarbot",
+      "appVersion": "9.43",
+      "appDescription": "",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "appPackage": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
       "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "",
@@ -37,6 +57,9 @@
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "category": "Utilities",
       "screenshots": [],
+      "version": "9.43",
+      "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
+      "size": 148911591,
       "versions": [
         {
           "version": "9.43",
@@ -48,6 +71,13 @@
       ]
     },
     {
+      "appType": "SELF_SIGN",
+      "versionDate": "2026-07-30",
+      "appName": "А-Ключ",
+      "appVersion": "2.0.0",
+      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
       "name": "А-Ключ",
       "bundleIdentifier": "com.kluchapp.prod",
       "developerName": "GK",
@@ -56,6 +86,9 @@
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "category": "Utilities",
       "screenshots": [],
+      "version": "2.0.0",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+      "size": 225693759,
       "versions": [
         {
           "version": "2.0.0",
@@ -66,5 +99,96 @@
         }
       ]
     }
-  ]
+  ],
+  "appRepositories": [
+    {
+      "appType": "SELF_SIGN",
+      "versionDate": "2026-07-29",
+      "appName": "Board Adventure",
+      "appVersion": "3.5.2590",
+      "appDescription": "играе ебагая",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
+      "appPackage": "довнлд.урд",
+      "name": "Board Adventure",
+      "bundleIdentifier": "com.moonactive.cmboard",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "хуйня",
+      "localizedDescription": "играе ебагая",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
+      "category": "Games",
+      "screenshots": [],
+      "version": "3.5.2590",
+      "downloadURL": "довнлд.урд",
+      "size": 127183823,
+      "versions": [
+        {
+          "version": "3.5.2590",
+          "date": "2026-07-29",
+          "downloadURL": "довнлд.урд",
+          "size": 127183823,
+          "localizedDescription": "играе ебагая"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "versionDate": "2026-07-30",
+      "appName": "Radarbot",
+      "appVersion": "9.43",
+      "appDescription": "",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "appPackage": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
+      "name": "Radarbot",
+      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
+      "developerName": "",
+      "subtitle": "",
+      "localizedDescription": "",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "category": "Utilities",
+      "screenshots": [],
+      "version": "9.43",
+      "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
+      "size": 148911591,
+      "versions": [
+        {
+          "version": "9.43",
+          "date": "2026-07-30",
+          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
+          "size": 148911591,
+          "localizedDescription": ""
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "versionDate": "2026-07-30",
+      "appName": "А-Ключ",
+      "appVersion": "2.0.0",
+      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+      "name": "А-Ключ",
+      "bundleIdentifier": "com.kluchapp.prod",
+      "developerName": "GK",
+      "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
+      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
+      "category": "Utilities",
+      "screenshots": [],
+      "version": "2.0.0",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+      "size": 225693759,
+      "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-07-30",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+          "size": 225693759,
+          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26"
+        }
+      ]
+    }
+  ],
+  "featuredApps": [],
+  "news": []
 }
