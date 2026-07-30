@@ -1,20 +1,68 @@
 {
   "name": "GeraStore",
   "identifier": "com.gkuhtov.gerastore",
+  "subtitle": "IPA Repository",
+  "description": "Каталог IPA приложений для GBox.",
+  "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
+  "website": "https://gkuhtov.github.io/GeraStore/",
+  "sourceURL": "https://gkuhtov.github.io/GeraStore/repo.json",
+  "featuredApps": [],
+  "news": [],
   "apps": [
     {
-      "name": "Radarbot Pro",
+      "name": "Board Adventure",
+      "bundleIdentifier": "com.moonactive.cmboard",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "хуйня",
+      "localizedDescription": "играе ебагая",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
+      "category": "Games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.5.2590",
+          "date": "2026-07-29",
+          "downloadURL": "довнлд.урд",
+          "size": 127183823,
+          "localizedDescription": "играе ебагая"
+        }
+      ]
+    },
+    {
+      "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
-      "developerName": "Radarbot",
-      "localizedDescription": "Radarbot Pro — интеллектуальный радар-детектор. Показывает камеры контроля скорости, предупреждает об опасностях на дороге, радарах и постах ДПС. Влюбом случаее мусоров проверяй.",
-      "localizedDescription": "Radarbot Pro версия 9.43",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/logo.png",
+      "developerName": "",
+      "subtitle": "",
+      "localizedDescription": "",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "category": "Utilities",
+      "screenshots": [],
       "versions": [
         {
           "version": "9.43",
-          "date": "2026-07-28",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/radarbot-9.43/Radarbot.ipa",
-          "size": 148911591
+          "date": "2026-07-30",
+          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
+          "size": 148911591,
+          "localizedDescription": ""
+        }
+      ]
+    },
+    {
+      "name": "А-Ключ",
+      "bundleIdentifier": "com.kluchapp.prod",
+      "developerName": "GK",
+      "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
+      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
+      "category": "Utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-07-30",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+          "size": 225693759,
+          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26"
         }
       ]
     }
