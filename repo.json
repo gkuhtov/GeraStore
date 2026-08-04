@@ -2,11 +2,21 @@
   "version": "1.0",
   "sourceName": "GeraStore",
   "sourceAuthor": "ГЕРЫЧ",
+  "sourceExportEnable": true,
+  "sourceLinkTitle": "GitHub",
+  "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
+  "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
   "sourceUpdateTime": "2026-08-04T17:39:56+0800",
+  "appCategories": [
+    "Games",
+    "Utilities",
+    "Emulators"
+  ],
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
+      "appCateIndex": 0,
       "appUpdateTime": "2026-08-04T17:39:56+0800",
       "versionDate": "2026-07-29",
       "appName": "Board Adventure",
@@ -20,7 +30,6 @@
       "subtitle": "ХУЕТА ЕБАНАЯ",
       "localizedDescription": "И ТЫ ТОЖЕ, ХУЕТА ЕБАНАЯ, БЛЯДЬ! ТЕСТ НОВОГО ОБНОВЛЕНИЯ 2. ТЕСТ АВТОМАТИЧЕСКОГО ОБНОВЛЕНИЯ 123. GeraStore AUTO UPDATE TEST 456.  TEST_SYNC_777 SOURCE_TIME_TEST",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
-      "category": "Games",
       "version": "3.5.2590",
       "downloadURL": "довнлд.урд",
       "size": 127183823,
@@ -38,6 +47,7 @@
     },
     {
       "appType": "SELF_SIGN",
+      "appCateIndex": 1,
       "appUpdateTime": "2026-08-04T16:47:01+0800",
       "versionDate": "2026-07-30",
       "appName": "Radarbot",
@@ -51,7 +61,6 @@
       "subtitle": "",
       "localizedDescription": "тест ебучий тут тоже, дубль два? НЕТ, ТРИ, БЛЯТЬ! а хуй там - четыре!!   Тест автоматического обновления. Проверка автоматической публикации v2",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons//com.iteration-mobile.radarbot-free-ww.png",
-      "category": "",
       "version": "9.44",
       "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
       "size": 148911591,
@@ -69,6 +78,7 @@
     },
     {
       "appType": "SELF_SIGN",
+      "appCateIndex": 1,
       "appUpdateTime": "2026-08-04T16:47:01+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
@@ -82,7 +92,6 @@
       "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
       "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
-      "category": "Utilities",
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
       "size": 225693759,
