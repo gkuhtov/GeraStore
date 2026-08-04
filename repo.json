@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-04T18:14:35+0800",
+  "sourceUpdateTime": "2026-08-04T18:20:28+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T18:14:35+0800",
+      "appUpdateTime": "2026-08-04T18:20:28+0800",
       "versionDate": "2026-07-30",
       "appName": "Radarbot",
       "appVersion": "9.44",
@@ -60,7 +60,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T18:14:35+0800",
+      "appUpdateTime": "2026-08-04T18:20:28+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
@@ -85,6 +85,37 @@
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
           "size": 225693759,
           "fileSize": 225693759
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 1,
+      "appUpdateTime": "2026-08-04T18:20:28+0800",
+      "versionDate": "2026-08-04",
+      "appName": "Board Adventure",
+      "appVersion": "3.5.2590",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+      "appDescription": "ХЗ, ИГРА ЧЕ ТО ТАМ",
+      "name": "Board Adventure",
+      "bundleIdentifier": "com.moonactive.cmboard",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "ХЗ, ИГРА ЧЕ ТО ТАМ",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
+      "version": "3.5.2590",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+      "size": 127183823,
+      "appSize": 127183823,
+      "fileSize": 127183823,
+      "versions": [
+        {
+          "version": "3.5.2590",
+          "date": "2026-08-04",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+          "size": 127183823,
+          "fileSize": 127183823
         }
       ]
     }
