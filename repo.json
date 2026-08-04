@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-04T18:06:58+0800",
+  "sourceUpdateTime": "2026-08-04T18:14:35+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -28,39 +28,8 @@
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
-      "appCateIndex": 0,
-      "appUpdateTime": "2026-08-04T18:06:58+0800",
-      "versionDate": "2026-07-29",
-      "appName": "Board Adventure",
-      "appVersion": "3.5.2590",
-      "appImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
-      "appPackage": "довнлд.урд",
-      "appDescription": "И ТЫ ТОЖЕ, ХУЕТА ЕБАНАЯ, БЛЯДЬ! ТЕСТ НОВОГО ОБНОВЛЕНИЯ 2. ТЕСТ АВТОМАТИЧЕСКОГО ОБНОВЛЕНИЯ 123. GeraStore AUTO UPDATE TEST 456.  TEST_SYNC_777 SOURCE_TIME_TEST",
-      "name": "Board Adventure",
-      "bundleIdentifier": "com.moonactive.cmboard",
-      "developerName": "ГЕРЫЧ",
-      "subtitle": "ХУЕТА ЕБАНАЯ",
-      "localizedDescription": "И ТЫ ТОЖЕ, ХУЕТА ЕБАНАЯ, БЛЯДЬ! ТЕСТ НОВОГО ОБНОВЛЕНИЯ 2. ТЕСТ АВТОМАТИЧЕСКОГО ОБНОВЛЕНИЯ 123. GeraStore AUTO UPDATE TEST 456.  TEST_SYNC_777 SOURCE_TIME_TEST",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
-      "version": "3.5.2590",
-      "downloadURL": "довнлд.урд",
-      "size": 127183823,
-      "appSize": 127183823,
-      "fileSize": 127183823,
-      "versions": [
-        {
-          "version": "3.5.2590",
-          "date": "2026-07-29",
-          "downloadURL": "довнлд.урд",
-          "size": 127183823,
-          "fileSize": 127183823
-        }
-      ]
-    },
-    {
-      "appType": "SELF_SIGN",
       "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T18:06:58+0800",
+      "appUpdateTime": "2026-08-04T18:14:35+0800",
       "versionDate": "2026-07-30",
       "appName": "Radarbot",
       "appVersion": "9.44",
@@ -91,7 +60,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T18:06:58+0800",
+      "appUpdateTime": "2026-08-04T18:14:35+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
