@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-04T21:41:36+0800",
+  "sourceUpdateTime": "2026-08-04T21:59:29+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,38 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T21:41:36+0800",
-      "versionDate": "2026-07-30",
-      "appName": "Radarbot",
-      "appVersion": "9.44",
-      "appImage": "https://gkuhtov.github.io/GeraStore/icons//com.iteration-mobile.radarbot-free-ww.png",
-      "appPackage": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
-      "appDescription": "тест ебучий тут тоже, дубль два? НЕТ, ТРИ, БЛЯТЬ! а хуй там - четыре!!   Тест автоматического обновления. Проверка автоматической публикации v2",
-      "name": "Radarbot",
-      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
-      "developerName": "",
-      "subtitle": "",
-      "localizedDescription": "тест ебучий тут тоже, дубль два? НЕТ, ТРИ, БЛЯТЬ! а хуй там - четыре!!   Тест автоматического обновления. Проверка автоматической публикации v2",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons//com.iteration-mobile.radarbot-free-ww.png",
-      "version": "9.44",
-      "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
-      "size": 148911591,
-      "appSize": 148911591,
-      "fileSize": 148911591,
-      "versions": [
-        {
-          "version": "9.44",
-          "date": "2026-07-30",
-          "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
-          "size": 148911591,
-          "fileSize": 148911591
-        }
-      ]
-    },
-    {
-      "appType": "SELF_SIGN",
-      "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T21:41:36+0800",
+      "appUpdateTime": "2026-08-04T21:59:29+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
@@ -91,7 +60,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-04T21:41:36+0800",
+      "appUpdateTime": "2026-08-04T21:59:29+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -116,6 +85,37 @@
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
           "size": 127183823,
           "fileSize": 127183823
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 13,
+      "appUpdateTime": "2026-08-04T21:59:29+0800",
+      "versionDate": "2026-08-04",
+      "appName": "Radarbot",
+      "appVersion": "9.43",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+      "appDescription": "ОПИС",
+      "name": "Radarbot",
+      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "САБ",
+      "localizedDescription": "ОПИС",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "version": "9.43",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+      "size": 148911591,
+      "appSize": 148911591,
+      "fileSize": 148911591,
+      "versions": [
+        {
+          "version": "9.43",
+          "date": "2026-08-04",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+          "size": 148911591,
+          "fileSize": 148911591
         }
       ]
     }
