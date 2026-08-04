@@ -3,7 +3,7 @@
   "sourceName": "GeraStore",
   "sourceAuthor": "ГЕРЫЧ",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-04T10:39:21+0800",
+  "sourceUpdateTime": "2026-08-04T10:46:42+0800",
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
@@ -24,12 +24,15 @@
       "version": "3.5.2590",
       "downloadURL": "довнлд.урд",
       "size": 127183823,
+      "appSize": 127183823,
+      "fileSize": 127183823,
       "versions": [
         {
           "version": "3.5.2590",
           "date": "2026-07-29",
           "downloadURL": "довнлд.урд",
-          "size": 127183823
+          "size": 127183823,
+          "fileSize": 127183823
         }
       ]
     },
@@ -52,12 +55,15 @@
       "version": "9.44",
       "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
       "size": 148911591,
+      "appSize": 148911591,
+      "fileSize": 148911591,
       "versions": [
         {
           "version": "9.44",
           "date": "2026-07-30",
           "downloadURL": "https://gkuhtov.github.io/GeraStore/ipa/Radarbot.ipa",
-          "size": 148911591
+          "size": 148911591,
+          "fileSize": 148911591
         }
       ]
     },
@@ -80,12 +86,15 @@
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
       "size": 225693759,
+      "appSize": 225693759,
+      "fileSize": 225693759,
       "versions": [
         {
           "version": "2.0.0",
           "date": "2026-07-30",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-          "size": 225693759
+          "size": 225693759,
+          "fileSize": 225693759
         }
       ]
     }
