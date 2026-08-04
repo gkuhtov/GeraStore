@@ -3,11 +3,11 @@
   "sourceName": "GeraStore",
   "sourceAuthor": "ГЕРЫЧ",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-04T11:41:42+0800",
+  "sourceUpdateTime": "2026-08-04T11:51:58+0800",
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
-      "appUpdateTime": "2026-08-04T10:50:49+0800",
+      "appUpdateTime": "2026-08-04T11:51:26+0800",
       "versionDate": "2026-07-29",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -38,7 +38,7 @@
     },
     {
       "appType": "SELF_SIGN",
-      "appUpdateTime": "2026-08-04T10:50:49+0800",
+      "appUpdateTime": "2026-08-04T11:51:26+0800",
       "versionDate": "2026-07-30",
       "appName": "Radarbot",
       "appVersion": "9.44",
@@ -69,7 +69,7 @@
     },
     {
       "appType": "SELF_SIGN",
-      "appUpdateTime": "2026-08-04T10:50:49+0800",
+      "appUpdateTime": "2026-08-04T11:51:26+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
