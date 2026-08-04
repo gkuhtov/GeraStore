@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-04T22:40:09+0800",
+  "sourceUpdateTime": "2026-08-04T22:40:13+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 2,
-      "appUpdateTime": "2026-08-04T22:40:09+0800",
+      "appUpdateTime": "2026-08-04T22:40:13+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
@@ -60,7 +60,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-04T22:40:09+0800",
+      "appUpdateTime": "2026-08-04T22:40:13+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -91,7 +91,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-04T22:40:09+0800",
+      "appUpdateTime": "2026-08-04T22:40:13+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
