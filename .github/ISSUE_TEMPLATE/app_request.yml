@@ -1,0 +1,61 @@
+name: 📦 Предложить приложение
+description: Хочешь, чтобы в GeraStore появилось новое приложение
+title: "[Приложение] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Предложи приложение, которое стоит добавить в GeraStore.
+  - type: input
+    id: app-name
+    attributes:
+      label: Название приложения
+      placeholder: Например, Telegram X
+    validations:
+      required: true
+  - type: input
+    id: bundle-id
+    attributes:
+      label: Bundle ID (если знаешь)
+      placeholder: com.example.app
+  - type: dropdown
+    id: category
+    attributes:
+      label: Категория
+      options:
+        - Игры
+        - Приложения
+        - Утилиты
+        - Эмуляторы
+        - Социальные сети
+        - Развлечения
+        - Медиа
+        - Фото и видео
+        - Музыка
+        - Образование
+        - Работа
+        - Финансы
+        - Здоровье
+        - Навигация
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Почему это приложение стоит добавить?
+      placeholder: Кратко опиши, чем оно полезно...
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Ссылка (если есть)
+      description: App Store, GitHub, или прямая ссылка на IPA
+      placeholder: https://...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительно
+      description: Версия, особенности, что угодно ещё
