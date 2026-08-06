@@ -1,0 +1,56 @@
+name: 🐛 Сообщить о проблеме
+description: Битая ссылка, ошибка загрузки, не работает приложение и т.д.
+title: "[Баг] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что помогаешь улучшить GeraStore!  
+        Опиши проблему как можно подробнее.
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: Тип проблемы
+      options:
+        - Битая ссылка на IPA
+        - Приложение не устанавливается
+        - Приложение вылетает / не работает
+        - Неправильная иконка или описание
+        - Проблема с источником в GBox
+        - Другое
+    validations:
+      required: true
+  - type: input
+    id: app-name
+    attributes:
+      label: Название приложения
+      description: Если проблема связана с конкретным приложением
+      placeholder: Например, Radarbot
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание проблемы
+      description: Что произошло? Что ожидал увидеть?
+      placeholder: Подробно опиши ситуацию...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги для воспроизведения
+      description: Как повторить проблему?
+      placeholder: |
+        1. Открыл GBox
+        2. Добавил источник
+        3. ...
+  - type: input
+    id: device
+    attributes:
+      label: Устройство и версия iOS
+      placeholder: iPhone 13, iOS 17.5
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительно
+      description: Скриншоты, ссылки, любая полезная информация
