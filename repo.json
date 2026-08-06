@@ -69,12 +69,12 @@
       "appVersion": "3.5.2590",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
-      "appDescription": "ОПИС",
+      "appDescription": "ТЕСТ",
       "name": "Board Adventure",
       "bundleIdentifier": "com.moonactive.cmboard",
       "developerName": "ГЕРЫЧ",
       "subtitle": "САБ",
-      "localizedDescription": "ОПИС",
+      "localizedDescription": "ТЕСТ",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "version": "3.5.2590",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
@@ -89,7 +89,7 @@
           "size": 127183823,
           "fileSize": 127183823,
           "category": "Игры",
-          "localizedDescription": "ОПИС",
+          "localizedDescription": "ТЕСТ",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png"
         }
       ]
