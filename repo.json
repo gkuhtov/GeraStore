@@ -35,12 +35,12 @@
       "appVersion": "2.0.0",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
+      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
       "name": "А-Ключ",
       "bundleIdentifier": "com.kluchapp.prod",
       "developerName": "GK",
       "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
-      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
+      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
@@ -55,7 +55,7 @@
           "size": 225693759,
           "fileSize": 225693759,
           "category": "Финансы",
-          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
+          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
         }
       ]
