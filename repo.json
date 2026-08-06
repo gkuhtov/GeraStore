@@ -28,7 +28,7 @@
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
-      "appCateIndex": 1,
+      "appCateIndex": 11,
       "appUpdateTime": "2026-08-06T19:04:21+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
@@ -54,7 +54,7 @@
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
           "size": 225693759,
           "fileSize": 225693759,
-          "category": "БАНК",
+          "category": "Финансы",
           "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
         }
