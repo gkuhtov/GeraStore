@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-06T19:04:21+0800",
+  "sourceUpdateTime": "2026-08-06T21:00:26+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -125,6 +125,40 @@
           "category": "Навигация",
           "localizedDescription": "АНТИРАДАР test 3",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 0,
+      "appUpdateTime": "2026-08-06T21:00:26+0800",
+      "versionDate": "2026-08-06T13:00:26Z",
+      "appName": "Bridge Constr+",
+      "appVersion": "14.0.873",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
+      "appDescription": "ИГРА ПРО МОСТИКИ",
+      "name": "Bridge Constr+",
+      "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "САБ",
+      "localizedDescription": "ИГРА ПРО МОСТИКИ",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
+      "version": "14.0.873",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
+      "size": 119786529,
+      "appSize": 119786529,
+      "fileSize": 119786529,
+      "versions": [
+        {
+          "version": "14.0.873",
+          "date": "2026-08-06T13:00:26Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
+          "size": 119786529,
+          "fileSize": 119786529,
+          "category": "Игры",
+          "localizedDescription": "ИГРА ПРО МОСТИКИ",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
         }
       ]
     }
