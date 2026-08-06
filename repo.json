@@ -103,12 +103,12 @@
       "appVersion": "9.43",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
-      "appDescription": "АНТИМУСОРСКАЯ ХУЙНЯ ТУТ 2",
+      "appDescription": "АНТИРАДАР",
       "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "ГЕРЫЧ",
       "subtitle": "САБ",
-      "localizedDescription": "АНТИМУСОРСКАЯ ХУЙНЯ ТУТ 2",
+      "localizedDescription": "АНТИРАДАР",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "version": "9.43",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
@@ -123,7 +123,7 @@
           "size": 148911591,
           "fileSize": 148911591,
           "category": "Навигация",
-          "localizedDescription": "АНТИМУСОРСКАЯ ХУЙНЯ ТУТ 2",
+          "localizedDescription": "АНТИРАДАР",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
         }
       ]
