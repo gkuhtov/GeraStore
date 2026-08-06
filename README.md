@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  by <strong>Гера Кухтов (ГЕРЫЧ)</strong>
+  by <strong>Гера Кухтов </strong>
 </p>
 
 ---
