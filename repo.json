@@ -28,19 +28,19 @@
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
-      "appCateIndex": 2,
+      "appCateIndex": 1,
       "appUpdateTime": "2026-08-06T19:04:21+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.\nхуйнюшка ебаная",
+      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
       "name": "А-Ключ",
       "bundleIdentifier": "com.kluchapp.prod",
       "developerName": "GK",
       "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
-      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.\nхуйнюшка ебаная",
+      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
@@ -54,8 +54,8 @@
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
           "size": 225693759,
           "fileSize": 225693759,
-          "category": "Утилиты",
-          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.\nхуйнюшка ебаная",
+          "category": "БАНК",
+          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore.\n▎Версия за май 26.",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
         }
       ]
