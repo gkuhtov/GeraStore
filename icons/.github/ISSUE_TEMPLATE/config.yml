@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Сайт GeraStore
+    url: https://gkuhtov.github.io/GeraStore/
+    about: Открыть лендинг источника
+  - name: repo.json
+    url: https://gkuhtov.github.io/GeraStore/repo.json
+    about: Прямая ссылка на источник для GBox
