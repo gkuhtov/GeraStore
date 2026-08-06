@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeraStore — IPA каталог для GBox</title>
+  <meta name="description" content="Русский каталог IPA-приложений для GBox. Добавляйте источник и устанавливайте приложения с самоподписью.">
+  <link rel="icon" href="icons/app_icon.png">
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --card: #1a1a21;
+      --card-hover: #22222b;
+      --text: #f0f0f5;
+      --text-muted: #a0a0b0;
+      --accent: #6c5ce7;
+      --accent-hover: #7c6cf0;
+      --border: #2a2a35;
+      --success: #00b894;
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      padding: 48px 0 32px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 32px rgba(108, 92, 231, 0.3);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(108, 92, 231, 0.15);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--card-hover);
+    }
+
+    /* How to */
+    .section {
+      padding: 48px 0;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin: 0 auto 12px;
+      font-size: 0.9rem;
+    }
+
+    .step p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .source-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .source-url {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9rem;
+      color: var(--success);
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      background: rgba(0, 184, 148, 0.15);
+      color: var(--success);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: rgba(0, 184, 148, 0.25);
+    }
+
+    /* Apps */
+    .apps-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .apps-count {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .app-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-card:hover {
+      background: var(--card-hover);
+      border-color: #3a3a48;
+      transform: translateY(-2px);
+    }
+
+    .app-top {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #2a2a35;
+    }
+
+    .app-info h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .app-meta {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .app-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+      flex-grow: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      white-space: pre-line;
+    }
+
+    .app-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-size {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .app-link {
+      background: rgba(108, 92, 231, 0.15);
+      color: var(--accent);
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .app-link:hover {
+      background: rgba(108, 92, 231, 0.25);
+    }
+
+    /* Warning */
+    .warning {
+      background: rgba(255, 107, 107, 0.08);
+      border: 1px solid rgba(255, 107, 107, 0.25);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+
+    .warning h3 {
+      color: #ff6b6b;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .warning p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+
+    .error {
+      text-align: center;
+      padding: 40px;
+      color: #ff6b6b;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.9rem; }
+      .logo { width: 72px; height: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="icons/app_icon.png" alt="GeraStore" class="logo" onerror="this.style.display='none'">
+      <div class="badge">IPA Repository для GBox</div>
+      <h1>GeraStore</h1>
+      <p class="subtitle">Русский каталог приложений для GBox<br>by Гера Кухтов (ГЕРЫЧ)</p>
+      <div class="actions">
+        <a href="#how-to" class="btn btn-primary">Добавить источник</a>
+        <a href="https://github.com/gkuhtov/GeraStore" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="how-to">
+    <div class="container">
+      <h2 class="section-title">Как добавить в GBox</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <p>Откройте GBox → Источники</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <p>Нажмите «+» / Добавить</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <p>Вставьте ссылку ниже</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <p>Готово! Приложения появятся</p>
+        </div>
+      </div>
+
+      <div class="source-box">
+        <code class="source-url" id="source-url">https://gkuhtov.github.io/GeraStore/repo.json</code>
+        <button class="copy-btn" onclick="copySource()">Скопировать</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="apps-header">
+        <h2 class="section-title" style="margin: 0; text-align: left;">Приложения</h2>
+        <span class="apps-count" id="apps-count"></span>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="apps-grid" id="apps-grid">
+        <div class="loading">Загрузка приложений…</div>
+      </div>
+
+      <div class="warning">
+        <h3>⚠ Важно</h3>
+        <p>Все приложения требуют самоподписи (SELF_SIGN). Использование неофициальных IPA может нарушать правила App Store и нести риски. Автор не несёт ответственности. Используйте на свой страх и риск.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        GeraStore · by <strong>ГЕРЫЧ</strong><br>
+        <a href="https://github.com/gkuhtov/GeraStore" target="_blank" rel="noopener">GitHub</a>
+        ·
+        <a href="repo.json" target="_blank">repo.json</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const REPO_URL = 'repo.json';
+
+    function formatSize(bytes) {
+      if (!bytes || bytes === 0) return '—';
+      const mb = bytes / (1024 * 1024);
+      return mb >= 10 ? Math.round(mb) + ' МБ' : mb.toFixed(1) + ' МБ';
+    }
+
+    function copySource() {
+      const url = document.getElementById('source-url').textContent;
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        const old = btn.textContent;
+        btn.textContent = 'Скопировано!';
+        setTimeout(() => btn.textContent = old, 2000);
+      });
+    }
+
+    let allApps = [];
+    let categories = [];
+
+    async function loadRepo() {
+      try {
+        const res = await fetch(REPO_URL + '?t=' + Date.now());
+        if (!res.ok) throw new Error('Не удалось загрузить repo.json');
+        const data = await res.json();
+
+        categories = data.appCategories || [];
+        allApps = (data.appRepositories || []).map(app => {
+          const catIndex = app.appCateIndex ?? 0;
+          return {
+            name: app.appName || app.name || 'Без названия',
+            version: app.appVersion || app.version || '—',
+            icon: app.appImage || app.iconURL || '',
+            description: app.appDescription || app.localizedDescription || app.subtitle || '',
+            size: app.appSize || app.size || app.fileSize || 0,
+            category: categories[catIndex] || 'Другое',
+            download: app.appPackage || app.downloadURL || '',
+            date: app.versionDate || ''
+          };
+        });
+
+        renderFilters();
+        renderApps(allApps);
+        document.getElementById('apps-count').textContent = allApps.length + ' приложений';
+      } catch (e) {
+        document.getElementById('apps-grid').innerHTML =
+          '<div class="error">Ошибка загрузки: ' + e.message + '<br>Попробуйте обновить страницу.</div>';
+      }
+    }
+
+    function renderFilters() {
+      const usedCats = [...new Set(allApps.map(a => a.category))];
+      const container = document.getElementById('filters');
+      container.innerHTML = '<button class="filter-btn active" data-cat="all">Все</button>';
+      usedCats.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.cat = cat;
+        btn.textContent = cat;
+        container.appendChild(btn);
+      });
+
+      container.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const cat = btn.dataset.cat;
+          renderApps(cat === 'all' ? allApps : allApps.filter(a => a.category === cat));
+        });
+      });
+    }
+
+    function renderApps(apps) {
+      const grid = document.getElementById('apps-grid');
+      if (!apps.length) {
+        grid.innerHTML = '<div class="loading">Нет приложений в этой категории</div>';
+        return;
+      }
+
+      grid.innerHTML = apps.map(app => `
+        <div class="app-card">
+          <div class="app-top">
+            <img class="app-icon" src="${app.icon}" alt="${app.name}" loading="lazy"
+                 onerror="this.src='icons/app_icon.png'">
+            <div class="app-info">
+              <h3>${app.name}</h3>
+              <div class="app-meta">${app.category} · v${app.version}</div>
+            </div>
+          </div>
+          <div class="app-desc">${app.description || 'Описание отсутствует'}</div>
+          <div class="app-footer">
+            <span class="app-size">${formatSize(app.size)}</span>
+            ${app.download ? `<a class="app-link" href="${app.download}" target="_blank" rel="noopener">Скачать IPA</a>` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    loadRepo();
+  </script>
+</body>
+</html>
