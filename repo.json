@@ -55,6 +55,7 @@
           "size": 225693759,
           "appSize": 225693759,
           "fileSize": 225693759,
+          "appFileSize": 225693759,
           "category": "Финансы",
           "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
@@ -90,6 +91,7 @@
           "size": 127183823,
           "appSize": 127183823,
           "fileSize": 127183823,
+          "appFileSize": 127183823,
           "category": "Игры",
           "localizedDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png"
@@ -105,12 +107,12 @@
       "appVersion": "9.43",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
-      "appDescription": "АНТИРАДАР test 3",
+      "appDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
       "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "ГЕРЫЧ",
       "subtitle": "САБ",
-      "localizedDescription": "АНТИРАДАР test 3",
+      "localizedDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "version": "9.43",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
@@ -125,8 +127,9 @@
           "size": 148911591,
           "appSize": 148911591,
           "fileSize": 148911591,
+          "appFileSize": 148911591,
           "category": "Навигация",
-          "localizedDescription": "АНТИРАДАР test 3",
+          "localizedDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
         }
       ]
@@ -160,6 +163,7 @@
           "size": 119786529,
           "appSize": 119786529,
           "fileSize": 119786529,
+          "appFileSize": 119786529,
           "category": "Игры",
           "localizedDescription": "ИГРА ПРО МОСТИКИ",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
