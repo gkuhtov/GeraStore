@@ -47,6 +47,7 @@
       "size": 225693759,
       "appSize": 225693759,
       "fileSize": 225693759,
+      "appFileSize": 225693759,
       "versions": [
         {
           "version": "2.0.0",
@@ -83,6 +84,7 @@
       "size": 127183823,
       "appSize": 127183823,
       "fileSize": 127183823,
+      "appFileSize": 127183823,
       "versions": [
         {
           "version": "3.5.2590",
@@ -119,6 +121,7 @@
       "size": 148911591,
       "appSize": 148911591,
       "fileSize": 148911591,
+      "appFileSize": 148911591,
       "versions": [
         {
           "version": "9.43",
@@ -143,18 +146,19 @@
       "appVersion": "14.0.873",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
-      "appDescription": "ИГРА ПРО МОСТИКИ",
+      "appDescription": "Стройте мосты, проверйте свои инженерные навыки и создавайте надежные конструкции. Решайте говололомки с физикой и проходите десятки уровней.",
       "name": "Bridge Constr+",
       "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
       "developerName": "ГЕРЫЧ",
       "subtitle": "САБ",
-      "localizedDescription": "ИГРА ПРО МОСТИКИ",
+      "localizedDescription": "Стройте мосты, проверйте свои инженерные навыки и создавайте надежные конструкции. Решайте говололомки с физикой и проходите десятки уровней.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "version": "14.0.873",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
       "size": 119786529,
       "appSize": 119786529,
       "fileSize": 119786529,
+      "appFileSize": 119786529,
       "versions": [
         {
           "version": "14.0.873",
@@ -165,7 +169,7 @@
           "fileSize": 119786529,
           "appFileSize": 119786529,
           "category": "Игры",
-          "localizedDescription": "ИГРА ПРО МОСТИКИ",
+          "localizedDescription": "Стройте мосты, проверйте свои инженерные навыки и создавайте надежные конструкции. Решайте говололомки с физикой и проходите десятки уровней.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
         }
       ]
