@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-06T21:00:26+0800",
+  "sourceUpdateTime": "2026-08-10T21:17:04+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -171,6 +171,43 @@
           "category": "Игры",
           "localizedDescription": "Стройте мосты, проверйте свои инженерные навыки и создавайте надежные конструкции. Решайте говололомки с физикой и проходите десятки уровней.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 5,
+      "appUpdateTime": "2026-08-10T21:17:04+0800",
+      "versionDate": "2026-08-10T13:17:04Z",
+      "appName": "RuTube ",
+      "appVersion": "1.1.0",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+      "name": "RuTube ",
+      "bundleIdentifier": "com.slicingdice.game",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png",
+      "version": "1.1.0",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
+      "size": 35875020,
+      "appSize": 35875020,
+      "fileSize": 35875020,
+      "appFileSize": 35875020,
+      "versions": [
+        {
+          "version": "1.1.0",
+          "date": "2026-08-10T13:17:04Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
+          "size": 35875020,
+          "appSize": 35875020,
+          "fileSize": 35875020,
+          "appFileSize": 35875020,
+          "category": "Развлечения",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png"
         }
       ]
     }
