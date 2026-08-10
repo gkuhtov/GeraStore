@@ -11,21 +11,21 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa</string>
+					<string>https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.headupgames.bridgeconstructor-arcade</string>
+				<string>com.moonactive.cmboard</string>
 				<key>bundle-version</key>
-				<string>14.0.873</string>
+				<string>3.5.2590</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>Bridge Constr+</string>
+				<string>Board Adventure</string>
 				<key>file-size</key>
-				<integer>119786529</integer>
+				<integer>127183823</integer>
 			</dict>
 		</dict>
 	</array>
