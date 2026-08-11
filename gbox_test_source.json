@@ -1,0 +1,26 @@
+{
+    "version": "1.0",
+    "sourceName": "GeraStore Size Test",
+    "sourceAuthor": "GERYCH",
+    "sourceExportEnable": true,
+    "sourceLinkTitle": "GeraStore",
+    "sourceLinkUrl": "https://gkuhtov.github.io/GeraStore/",
+    "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
+    "sourceUpdateTime": "2026-08-11T00:00:00+0800",
+    "sourceDescription": "GBox size detection test",
+    "appCategories": [
+        "Игры"
+    ],
+    "appRepositories": [
+        {
+            "appType": "SELF_SIGN",
+            "appCateIndex": 0,
+            "appUpdateTime": "2026-08-11T00:00:00+0800",
+            "appName": "Bridge Constr+",
+            "appVersion": "14.0.873",
+            "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
+            "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
+            "appDescription": "GBox size detection test"
+        }
+    ]
+}
