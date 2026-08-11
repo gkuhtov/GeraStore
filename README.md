@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  by <strong>Гера Кухтов </strong>
+  by <strong>Гера Кухтов (ГЕРЫЧ)</strong>
 </p>
 
 ---
@@ -69,7 +69,23 @@ https://raw.githubusercontent.com/gkuhtov/GeraStore/main/repo.json
 - **repo.json:** [прямая ссылка](https://gkuhtov.github.io/GeraStore/repo.json)
 - **GitHub:** [gkuhtov/GeraStore](https://github.com/gkuhtov/GeraStore)
 
+---
+
+## Структура репозитория
+
 ```
+GeraStore/
+├── repo.json          ← основной файл источника для GBox
+├── index.html         ← красивая страница-лендинг
+├── icons/             ← иконки приложений
+├── apps/              ← исходные данные
+├── generator.py       ← скрипт генерации
+└── LICENSE            ← MIT
+```
+
+IPA-файлы лежат в **GitHub Releases** (так удобнее работать с большими файлами).
+
+---
 
 ## Предупреждение
 
