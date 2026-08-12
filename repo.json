@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-12T15:22:34+0800",
+  "sourceUpdateTime": "2026-08-12T16:51:43+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -67,18 +67,18 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-12T14:44:31+0800",
+      "appUpdateTime": "2026-08-12T16:51:43+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
-      "appDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Исследуйте новые миры и открывайте разные локации.\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, стройте и развивайте свою империю. Открывайте новые тематические миры, участвуйте в событиях и собирайте награды.",
       "name": "Board Adventure",
       "bundleIdentifier": "com.moonactive.cmboard",
       "developerName": "ГЕРЫЧ",
       "subtitle": "САБ",
-      "localizedDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Исследуйте новые миры и открывайте разные локации.\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, стройте и развивайте свою империю. Открывайте новые тематические миры, участвуйте в событиях и собирайте награды.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "version": "3.5.2590",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
@@ -97,7 +97,7 @@
           "appFileSize": 127183823,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.moonactive.cmboard.plist",
           "category": "Игры",
-          "localizedDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Исследуйте новые миры и открывайте разные локации.\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, стройте и развивайте свою империю. Открывайте новые тематические миры, участвуйте в событиях и собирайте награды.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png"
         }
       ]
