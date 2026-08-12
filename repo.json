@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-12T17:12:23+0800",
+  "sourceUpdateTime": "2026-08-12T17:14:11+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -181,18 +181,18 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-12T14:44:31+0800",
+      "appUpdateTime": "2026-08-12T17:14:11+0800",
       "versionDate": "2026-08-10T13:17:04Z",
-      "appName": "RuTube ",
+      "appName": "RuTube",
       "appVersion": "1.1.0",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
-      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
-      "name": "RuTube ",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+      "name": "RuTube",
       "bundleIdentifier": "com.slicingdice.game",
       "developerName": "ГЕРЫЧ",
       "subtitle": "",
-      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png",
       "version": "1.1.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
@@ -211,7 +211,7 @@
           "appFileSize": 35875020,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.slicingdice.game.plist",
           "category": "Развлечения",
-          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png"
         }
       ]
