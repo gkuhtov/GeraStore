@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-12T17:10:45+0800",
+  "sourceUpdateTime": "2026-08-12T17:12:23+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -143,18 +143,18 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-12T14:44:31+0800",
+      "appUpdateTime": "2026-08-12T17:12:23+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
-      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин.",
       "name": "Bridge Constr+",
       "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
       "developerName": "ГЕРЫЧ",
       "subtitle": "",
-      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "version": "14.0.873",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
@@ -173,7 +173,7 @@
           "appFileSize": 119786529,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.headupgames.bridgeconstructor-arcade.plist",
           "category": "Игры",
-          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
         }
       ]
