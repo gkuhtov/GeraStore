@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-12T16:55:57+0800",
+  "sourceUpdateTime": "2026-08-12T17:10:45+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,18 +29,18 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-12T14:44:31+0800",
+      "appUpdateTime": "2026-08-12T17:10:45+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Бесконтактная оплата с iPhone.\n🩷Работа через Bluetooth.\n\n💳 А-Ключ позволяет использовать iPhone для бесконтактной оплаты и работы с банковскими сервисами Альфа-Банка.",
       "name": "А-Ключ",
       "bundleIdentifier": "com.kluchapp.prod",
-      "developerName": "GK",
+      "developerName": "ГЕРЫЧ",
       "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
-      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Бесконтактная оплата с iPhone.\n🩷Работа через Bluetooth.\n\n💳 А-Ключ позволяет использовать iPhone для бесконтактной оплаты и работы с банковскими сервисами Альфа-Банка.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
@@ -59,7 +59,7 @@
           "appFileSize": 225693759,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist",
           "category": "Финансы",
-          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Бесконтактная оплата с iPhone.\n🩷Работа через Bluetooth.\n\n💳 А-Ключ позволяет использовать iPhone для бесконтактной оплаты и работы с банковскими сервисами Альфа-Банка.",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
         }
       ]
