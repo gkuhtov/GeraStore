@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-12T14:43:11+0800",
+  "sourceUpdateTime": "2026-08-12T14:44:20+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-12T14:43:11+0800",
+      "appUpdateTime": "2026-08-12T14:44:20+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
@@ -67,7 +67,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-12T14:43:11+0800",
+      "appUpdateTime": "2026-08-12T14:44:20+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -105,7 +105,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-12T14:43:11+0800",
+      "appUpdateTime": "2026-08-12T14:44:20+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
@@ -143,18 +143,18 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-12T14:43:11+0800",
+      "appUpdateTime": "2026-08-12T14:44:20+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
-      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.\n\n⚡️Новейшая верс",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.",
       "name": "Bridge Constr+",
       "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
       "developerName": "ГЕРЫЧ",
       "subtitle": "",
-      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.\n\n⚡️Новейшая верс",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "version": "14.0.873",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
@@ -173,7 +173,7 @@
           "appFileSize": 119786529,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.headupgames.bridgeconstructor-arcade.plist",
           "category": "Игры",
-          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.\n\n⚡️Новейшая верс",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n💚Полная версия игры.\n💚Без рекламы.\n💚40 уровней.\n💚Свободный режим строительства.\n💚Дополнения SlopeMania и Trains.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
         }
       ]
@@ -181,7 +181,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-12T14:43:11+0800",
+      "appUpdateTime": "2026-08-12T14:44:20+0800",
       "versionDate": "2026-08-10T13:17:04Z",
       "appName": "RuTube ",
       "appVersion": "1.1.0",
