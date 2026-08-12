@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-12T14:44:31+0800",
+  "sourceUpdateTime": "2026-08-12T15:19:04+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -105,18 +105,18 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-12T14:44:31+0800",
+      "appUpdateTime": "2026-08-12T15:19:04+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
-      "appDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
+      "appDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n💚Без рекламы.\n💚Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором или музыкальным приложением.",
       "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "ГЕРЫЧ",
-      "subtitle": "САБ",
-      "localizedDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
+      "subtitle": "",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n💚Без рекламы.\n💚Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором или музыкальным приложением.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "version": "9.43",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
@@ -135,7 +135,7 @@
           "appFileSize": 148911591,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist",
           "category": "Навигация",
-          "localizedDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n💚Без рекламы.\n💚Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором или музыкальным приложением.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
         }
       ]
