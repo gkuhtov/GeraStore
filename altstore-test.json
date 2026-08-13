@@ -1,0 +1,113 @@
+{
+  "name": "GeraKStore Test",
+  "identifier": "com.gerakstore.alt.test",
+  "subtitle": "Тест AltStore-формата (вес в GBox)",
+  "description": "Тестовый источник. Основной: repo.json",
+  "iconURL": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
+  "website": "https://gkuhtov.github.io/GeraStore/",
+  "sourceURL": "https://gkuhtov.github.io/GeraStore/altstore-test.json",
+  "apps": [
+    {
+      "name": "А-Ключ",
+      "bundleIdentifier": "com.kluchapp.prod",
+      "developerName": "ГЕРЫЧ",
+      "version": "2.0.0",
+      "versionDate": "2026-07-30",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+      "size": 225693759,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Бесконтактная оплата с iPhone.\n🩷Работа через Bluetooth.\n\n💳 А-Ключ позволяет использовать iPhone для бесконтактной оплаты и работы с банковскими сервисами Альфа-Банка.",
+      "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-07-30",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
+          "size": 225693759,
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Бесконтактная оплата с iPhone.\n🩷Работа через Bluetooth.\n\n💳 А-Ключ позволяет использовать iPhone для бесконтактной оплаты и работы с банковскими сервисами Альфа-Банка."
+        }
+      ],
+      "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\"."
+    },
+    {
+      "name": "Board Adventure",
+      "bundleIdentifier": "com.moonactive.cmboard",
+      "developerName": "ГЕРЫЧ",
+      "version": "3.5.2590",
+      "versionDate": "2026-08-04",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+      "size": 127183823,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды.",
+      "versions": [
+        {
+          "version": "3.5.2590",
+          "date": "2026-08-04",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+          "size": 127183823,
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды."
+        }
+      ],
+      "subtitle": "САБ"
+    },
+    {
+      "name": "Radarbot",
+      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
+      "developerName": "ГЕРЫЧ",
+      "version": "9.43",
+      "versionDate": "2026-08-04",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+      "size": 148911591,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги.",
+      "versions": [
+        {
+          "version": "9.43",
+          "date": "2026-08-04",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+          "size": 148911591,
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги."
+        }
+      ]
+    },
+    {
+      "name": "Bridge Constr+",
+      "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
+      "developerName": "ГЕРЫЧ",
+      "version": "14.0.873",
+      "versionDate": "2026-08-06",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
+      "size": 119786529,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин.",
+      "versions": [
+        {
+          "version": "14.0.873",
+          "date": "2026-08-06",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
+          "size": 119786529,
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин."
+        }
+      ]
+    },
+    {
+      "name": "RuTube",
+      "bundleIdentifier": "com.slicingdice.game",
+      "developerName": "ГЕРЫЧ",
+      "version": "1.1.0",
+      "versionDate": "2026-08-10",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
+      "size": 35875020,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png",
+      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "date": "2026-08-10",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
+          "size": 35875020,
+          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме."
+        }
+      ]
+    }
+  ]
+}
