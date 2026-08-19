@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-13T20:51:47+0800",
+  "sourceUpdateTime": "2026-08-19T18:06:35+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-13T20:51:47+0800",
+      "appUpdateTime": "2026-08-19T18:06:35+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
@@ -68,7 +68,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-13T20:51:47+0800",
+      "appUpdateTime": "2026-08-19T18:06:35+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -107,7 +107,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-13T20:51:47+0800",
+      "appUpdateTime": "2026-08-19T18:06:35+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
@@ -146,7 +146,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-13T20:51:47+0800",
+      "appUpdateTime": "2026-08-19T18:06:35+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
@@ -185,7 +185,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-13T20:51:47+0800",
+      "appUpdateTime": "2026-08-19T18:06:35+0800",
       "versionDate": "2026-08-10T13:17:04Z",
       "appName": "RuTube",
       "appVersion": "1.1.0",
@@ -218,6 +218,45 @@
           "category": "Развлечения",
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 11,
+      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "versionDate": "2026-08-19T10:06:35Z",
+      "appName": "Online",
+      "appVersion": "17.6.1",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/C:/Users/gkuht/GeraStore/icons/com.inv.gen.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.inv.gen..plist",
+      "appDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
+      "name": "Online",
+      "bundleIdentifier": "com.inv.gen.",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/C:/Users/gkuht/GeraStore/icons/com.inv.gen.png",
+      "version": "17.6.1",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
+      "size": 303631261,
+      "appSize": 303631261,
+      "fileSize": 303631261,
+      "appFileSize": 303631261,
+      "versions": [
+        {
+          "version": "17.6.1",
+          "date": "2026-08-19T10:06:35Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
+          "size": 303631261,
+          "appSize": 303631261,
+          "fileSize": 303631261,
+          "appFileSize": 303631261,
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.inv.gen..plist",
+          "category": "Финансы",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
+          "iconURL": "C:\\Users\\gkuht\\GeraStore\\icons\\com.inv.gen.png"
         }
       ]
     }

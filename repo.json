@@ -108,6 +108,26 @@
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме."
         }
       ]
+    },
+    {
+      "name": "Online",
+      "bundleIdentifier": "com.inv.gen.",
+      "developerName": "ГЕРЫЧ",
+      "version": "17.6.1",
+      "versionDate": "2026-08-19",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
+      "size": 303631261,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/C:/Users/gkuht/GeraStore/icons/com.inv.gen.png",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
+      "versions": [
+        {
+          "version": "17.6.1",
+          "date": "2026-08-19",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
+          "size": 303631261,
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона."
+        }
+      ]
     }
   ]
 }
