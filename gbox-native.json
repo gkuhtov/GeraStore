@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-19T21:05:01+0800",
+  "sourceUpdateTime": "2026-08-19T21:27:21+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -28,48 +28,8 @@
   "appRepositories": [
     {
       "appType": "SELF_SIGN",
-      "appCateIndex": 1,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
-      "versionDate": "2026-08-19T13:05:01Z",
-      "appName": "А-Ключ",
-      "appVersion": "2.0.0",
-      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
-      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist",
-      "appDescription": "ТЕСТ ЕБУЧИЙ!!",
-      "name": "А-Ключ",
-      "bundleIdentifier": "com.kluchapp.prod",
-      "developerName": "",
-      "category": "Приложения",
-      "subtitle": "",
-      "localizedDescription": "ТЕСТ ЕБУЧИЙ!!",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
-      "version": "2.0.0",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "size": 225693759,
-      "appSize": 225693759,
-      "fileSize": 225693759,
-      "appFileSize": 225693759,
-      "versions": [
-        {
-          "version": "2.0.0",
-          "date": "2026-08-19T13:05:01Z",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-          "size": 225693759,
-          "appSize": 225693759,
-          "fileSize": 225693759,
-          "appFileSize": 225693759,
-          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist",
-          "category": "Приложения",
-          "localizedDescription": "ТЕСТ ЕБУЧИЙ!!",
-          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png"
-        }
-      ]
-    },
-    {
-      "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
+      "appUpdateTime": "2026-08-19T21:27:21+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -109,7 +69,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
+      "appUpdateTime": "2026-08-19T21:27:21+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
@@ -149,7 +109,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
+      "appUpdateTime": "2026-08-19T21:27:21+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
@@ -189,7 +149,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
+      "appUpdateTime": "2026-08-19T21:27:21+0800",
       "versionDate": "2026-08-10T13:17:04Z",
       "appName": "RuTube",
       "appVersion": "1.1.0",
@@ -229,7 +189,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
+      "appUpdateTime": "2026-08-19T21:27:21+0800",
       "versionDate": "2026-08-19T10:06:35Z",
       "appName": "Online",
       "appVersion": "17.6.1",
@@ -269,7 +229,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-19T21:05:01+0800",
+      "appUpdateTime": "2026-08-19T21:27:21+0800",
       "versionDate": "2026-08-19T12:03:18Z",
       "appName": "Сириус",
       "appVersion": "2.0.1",

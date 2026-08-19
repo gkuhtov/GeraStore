@@ -8,27 +8,6 @@
   "sourceURL": "https://gkuhtov.github.io/GeraStore/repo.json",
   "apps": [
     {
-      "name": "А-Ключ",
-      "bundleIdentifier": "com.kluchapp.prod",
-      "developerName": "ГЕРЫЧ",
-      "category": "Приложения",
-      "version": "2.0.0",
-      "versionDate": "2026-08-19",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "size": 225693759,
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
-      "localizedDescription": "ТЕСТ ЕБУЧИЙ!!",
-      "versions": [
-        {
-          "version": "2.0.0",
-          "date": "2026-08-19",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-          "size": 225693759,
-          "localizedDescription": "ТЕСТ ЕБУЧИЙ!!"
-        }
-      ]
-    },
-    {
       "name": "Board Adventure",
       "bundleIdentifier": "com.moonactive.cmboard",
       "developerName": "ГЕРЫЧ",
