@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-19T18:06:35+0800",
+  "sourceUpdateTime": "2026-08-19T20:03:18+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
       "versionDate": "2026-07-30",
       "appName": "А-Ключ",
       "appVersion": "2.0.0",
@@ -68,7 +68,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -107,7 +107,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
@@ -146,7 +146,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
@@ -185,7 +185,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
       "versionDate": "2026-08-10T13:17:04Z",
       "appName": "RuTube",
       "appVersion": "1.1.0",
@@ -224,7 +224,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-19T18:06:35+0800",
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
       "versionDate": "2026-08-19T10:06:35Z",
       "appName": "Online",
       "appVersion": "17.6.1",
@@ -257,6 +257,45 @@
           "category": "Финансы",
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
           "iconURL": "C:\\Users\\gkuht\\GeraStore\\icons\\com.inv.gen.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 11,
+      "appUpdateTime": "2026-08-19T20:03:18+0800",
+      "versionDate": "2026-08-19T12:03:18Z",
+      "appName": "Сириус",
+      "appVersion": "2.0.1",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/C:/Users/gkuht/GeraStore/icons/com.sm.FlowTime.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.sm.FlowTime.plist",
+      "appDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+      "name": "Сириус",
+      "bundleIdentifier": "com.sm.FlowTime",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/C:/Users/gkuht/GeraStore/icons/com.sm.FlowTime.png",
+      "version": "2.0.1",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
+      "size": 379282059,
+      "appSize": 379282059,
+      "fileSize": 379282059,
+      "appFileSize": 379282059,
+      "versions": [
+        {
+          "version": "2.0.1",
+          "date": "2026-08-19T12:03:18Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
+          "size": 379282059,
+          "appSize": 379282059,
+          "fileSize": 379282059,
+          "appFileSize": 379282059,
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.sm.FlowTime.plist",
+          "category": "Финансы",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+          "iconURL": "C:\\Users\\gkuht\\GeraStore\\icons\\com.sm.FlowTime.png"
         }
       ]
     }

@@ -128,6 +128,26 @@
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона."
         }
       ]
+    },
+    {
+      "name": "Сириус",
+      "bundleIdentifier": "com.sm.FlowTime",
+      "developerName": "ГЕРЫЧ",
+      "version": "2.0.1",
+      "versionDate": "2026-08-19",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
+      "size": 379282059,
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/C:/Users/gkuht/GeraStore/icons/com.sm.FlowTime.png",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+      "versions": [
+        {
+          "version": "2.0.1",
+          "date": "2026-08-19",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
+          "size": 379282059,
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона."
+        }
+      ]
     }
   ]
 }
