@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GeraStore — IPA каталог для GBox</title>
+  <title>GeraKStore — IPA каталог для GBox</title>
   <meta name="description" content="Русский каталог IPA-приложений для GBox. Добавляйте источник и устанавливайте приложения с самоподписью.">
   <link rel="icon" href="icons/app_icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,10 @@
       --text: #fafafa;
       --text-muted: #a1a1aa;
       --text-dim: #71717a;
-      --accent: #8b5cf6;
-      --accent2: #a78bfa;
-      --accent-glow: rgba(139, 92, 246, 0.35);
+      --accent: #ff2f92;
+      --accent2: #ff4fa3;
+      --turquoise: #2ee6d6;
+      --accent-glow: rgba(255, 47, 146, 0.35);
       --success: #34d399;
       --border: rgba(255,255,255,0.06);
       --radius: 20px;
@@ -146,7 +147,7 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      background: linear-gradient(135deg, #ff2f92, #ff75b8);
       color: white;
       box-shadow: 0 4px 20px var(--accent-glow);
     }
@@ -236,7 +237,7 @@
     .step-num {
       width: 36px;
       height: 36px;
-      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      background: linear-gradient(135deg, #ff2f92, #ff75b8);
       color: white;
       border-radius: 10px;
       display: flex;
@@ -604,7 +605,7 @@
              onerror="this.src='https://gkuhtov.github.io/GeraStore/icons/app_icon.png'">
       </div>
       <div class="badge">IPA Repository для GBox</div>
-      <h1>GeraStore</h1>
+      <h1>GeraKStore</h1>
       <p class="subtitle">Русский каталог приложений для GBox<br>by Гера Кухтов (ГЕРЫЧ)</p>
       <div class="actions">
         <a href="#how-to" class="btn btn-primary">
@@ -655,7 +656,15 @@
         <h2 class="section-title">Приложения</h2>
         <span class="apps-count" id="apps-count"></span>
       </div>
-      <div class="filters" id="filters"></div>
+      <div class="apps-toolbar" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:8px">
+        <div class="filters" id="filters" style="margin:0"></div>
+        <select id="sort-select" style="margin-left:auto;background:#141418;color:#fafafa;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px 12px">
+          <option value="name">По имени</option>
+          <option value="size">По размеру</option>
+          <option value="version">По версии</option>
+        </select>
+      </div>
+      <p id="result-line" style="color:#a1a1aa;font-size:13px;margin:0 0 12px"></p>
       <div class="apps-grid" id="apps-grid">
         <div class="loading">
           <div class="loading-spinner"></div>
@@ -676,10 +685,10 @@
   <footer>
     <div class="container">
       <p>
-        GeraStore · by <strong>ГЕРЫЧ</strong><br><br>
+        GeraKStore · by <strong>ГЕРЫЧ</strong><br><br>
         <a href="https://github.com/gkuhtov/GeraStore" target="_blank" rel="noopener">GitHub</a>
         &nbsp;·&nbsp;
-        <a href="https://gkuhtov.github.io/GeraStore/repo.json" target="_blank">repo.json</a>
+        <a href="https://t.me/madebygood" target="_blank" rel="noopener">Telegram</a>
       </p>
       <p style="margin-top: 12px; opacity: 0.5;">Сделано с <span class="heart">♥</span> для сообщества GBox</p>
     </div>
@@ -788,7 +797,7 @@
       }
 
       renderFilters();
-      renderApps(allApps);
+      renderApps(typeof currentList === 'function' ? currentList() : allApps);
       document.getElementById('apps-count').textContent = allApps.length + ' ' + pluralApps(allApps.length);
     }
 
@@ -796,6 +805,22 @@
       if (n % 10 === 1 && n % 100 !== 11) return 'приложение';
       if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) return 'приложения';
       return 'приложений';
+    }
+
+    let activeCat = 'all';
+
+    function sortApps(list) {
+      const mode = (document.getElementById('sort-select') || {}).value || 'name';
+      const arr = list.slice();
+      if (mode === 'size') arr.sort((a, b) => (b.size || 0) - (a.size || 0));
+      else if (mode === 'version') arr.sort((a, b) => String(b.version).localeCompare(String(a.version), undefined, { numeric: true }));
+      else arr.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
+      return arr;
+    }
+
+    function currentList() {
+      const base = activeCat === 'all' ? allApps : allApps.filter(a => a.category === activeCat);
+      return sortApps(base);
     }
 
     function renderFilters() {
@@ -814,14 +839,26 @@
         btn.addEventListener('click', () => {
           container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-          const cat = btn.dataset.cat;
-          renderApps(cat === 'all' ? allApps : allApps.filter(a => a.category === cat));
+          activeCat = btn.dataset.cat;
+          renderApps(currentList());
         });
       });
+
+      const sortEl = document.getElementById('sort-select');
+      if (sortEl && !sortEl._bound) {
+        sortEl._bound = true;
+        sortEl.addEventListener('change', () => renderApps(currentList()));
+      }
     }
 
     function renderApps(apps) {
       const grid = document.getElementById('apps-grid');
+      const line = document.getElementById('result-line');
+      if (line) {
+        line.textContent = apps.length === allApps.length
+          ? (allApps.length + ' ' + pluralApps(allApps.length))
+          : ('Показано ' + apps.length + ' из ' + allApps.length);
+      }
       if (!apps.length) {
         grid.innerHTML = '<div class="loading">Нет приложений в этой категории</div>';
         return;
