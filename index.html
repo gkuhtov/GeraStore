@@ -762,18 +762,30 @@
       }
 
       categories = data.appCategories || [];
-      allApps = (data.appRepositories || []).map(app => {
+      // GBox-native: appRepositories | AltStore: apps
+      const rawList = data.appRepositories || data.apps || [];
+      allApps = rawList.map(app => {
         const catIndex = app.appCateIndex ?? 0;
+        const category =
+          app.category ||
+          (categories[catIndex] !== undefined ? categories[catIndex] : null) ||
+          'Другое';
+        if (category && !categories.includes(category)) {
+          categories.push(category);
+        }
         return {
           name: app.appName || app.name || 'Без названия',
           version: app.appVersion || app.version || '—',
           icon: app.appImage || app.iconURL || '',
           description: app.appDescription || app.localizedDescription || app.subtitle || '',
           size: app.appSize || app.size || app.fileSize || 0,
-          category: categories[catIndex] || 'Другое',
+          category: category,
           download: app.appPackage || app.downloadURL || ''
         };
       });
+      if (!data.appCategories || !data.appCategories.length) {
+        categories = [...new Set(allApps.map(a => a.category).filter(Boolean))];
+      }
 
       renderFilters();
       renderApps(allApps);
