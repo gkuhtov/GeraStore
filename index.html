@@ -1,889 +1,999 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>GeraKStore — IPA каталог для GBox</title>
-  <meta name="description" content="Русский каталог IPA-приложений для GBox. Добавляйте источник и устанавливайте приложения с самоподписью.">
-  <link rel="icon" href="icons/app_icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Русский каталог IPA для GBox. Liquid glass витрина GeraKStore." />
+  <link rel="icon" href="icons/app_icon.png" />
   <style>
     :root {
-      --bg: #09090b;
-      --card: #141418;
-      --card-hover: #1c1c24;
-      --text: #fafafa;
-      --text-muted: #a1a1aa;
-      --text-dim: #71717a;
-      --accent: #ff2f92;
-      --accent2: #ff4fa3;
-      --turquoise: #2ee6d6;
-      --accent-glow: rgba(255, 47, 146, 0.35);
-      --success: #34d399;
-      --border: rgba(255,255,255,0.06);
-      --radius: 20px;
+      --pink: #ff2f92;
+      --pink-2: #ff4fa3;
+      --pink-soft: rgba(255, 47, 146, 0.35);
+      --cyan: #2ee6d6;
+      --cyan-soft: rgba(46, 230, 214, 0.28);
+      --text: rgba(255, 255, 255, 0.92);
+      --text-2: rgba(255, 255, 255, 0.55);
+      --text-3: rgba(255, 255, 255, 0.35);
+      --glass: rgba(255, 255, 255, 0.06);
+      --glass-2: rgba(255, 255, 255, 0.09);
+      --glass-3: rgba(255, 255, 255, 0.12);
+      --stroke: rgba(255, 255, 255, 0.14);
+      --stroke-2: rgba(255, 255, 255, 0.22);
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      --radius: 28px;
+      --radius-sm: 18px;
+      --blur: 40px;
+      --blur-sm: 24px;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: var(--font);
       color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
       -webkit-font-smoothing: antialiased;
     }
 
-    body::before {
-      content: '';
+    /* Ambient stage */
+    body {
+      background: #07060b;
+      overflow-x: hidden;
+    }
+    body::before,
+    body::after {
+      content: "";
       position: fixed;
-      top: -40%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 900px;
-      height: 600px;
-      background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
-      pointer-events: none;
+      inset: -20%;
       z-index: 0;
+      pointer-events: none;
+    }
+    body::before {
+      background:
+        radial-gradient(ellipse 50% 40% at 15% 20%, rgba(255, 47, 146, 0.45), transparent 55%),
+        radial-gradient(ellipse 45% 35% at 85% 15%, rgba(46, 230, 214, 0.32), transparent 50%),
+        radial-gradient(ellipse 40% 40% at 70% 80%, rgba(120, 60, 255, 0.2), transparent 55%),
+        radial-gradient(ellipse 50% 40% at 20% 90%, rgba(255, 47, 146, 0.15), transparent 50%);
+      filter: blur(8px);
+      animation: drift 18s ease-in-out infinite alternate;
+    }
+    body::after {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.08), transparent 40%);
+      opacity: 0.7;
+    }
+    @keyframes drift {
+      from { transform: translate3d(-2%, -1%, 0) scale(1); }
+      to { transform: translate3d(2%, 2%, 0) scale(1.05); }
     }
 
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 24px;
+    .stage {
       position: relative;
       z-index: 1;
-    }
-
-    header {
-      padding: 64px 0 48px;
-      text-align: center;
-    }
-
-    .logo-wrap {
-      display: inline-block;
-      margin-bottom: 28px;
-    }
-
-    .logo {
-      width: 96px;
-      height: 96px;
-      border-radius: 24px;
-      box-shadow: 0 12px 40px var(--accent-glow), 0 0 0 1px rgba(255,255,255,0.08);
-      transition: transform 0.3s ease;
-    }
-
-    .logo-wrap:hover .logo {
-      transform: scale(1.05) rotate(-2deg);
-    }
-
-    .badge {
-      display: inline-flex;
+      min-height: 100vh;
+      padding: 20px 16px 32px;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 8px;
-      background: rgba(139, 92, 246, 0.12);
-      border: 1px solid rgba(139, 92, 246, 0.25);
-      color: var(--accent2);
-      padding: 6px 16px;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      margin-bottom: 20px;
     }
 
-    .badge::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      background: var(--accent);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--accent);
+    /* Liquid glass shell */
+    .shell {
+      width: min(1180px, 100%);
+      min-height: calc(100vh - 52px);
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03) 40%, rgba(255,255,255,0.06));
+      border: 1px solid var(--stroke);
+      box-shadow:
+        var(--shadow),
+        inset 0 1px 0 rgba(255,255,255,0.18),
+        inset 0 -1px 0 rgba(0,0,0,0.2);
+      backdrop-filter: blur(var(--blur)) saturate(180%);
+      -webkit-backdrop-filter: blur(var(--blur)) saturate(180%);
+      overflow: hidden;
+      position: relative;
+    }
+    .shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.16) 0%, transparent 28%, transparent 72%, rgba(255,255,255,0.06) 100%);
+      opacity: 0.55;
+      mix-blend-mode: soft-light;
     }
 
-    h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      letter-spacing: -1.5px;
-      margin-bottom: 12px;
-      background: linear-gradient(135deg, #fff 30%, var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .sidebar {
+      position: relative;
+      z-index: 2;
+      padding: 22px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: rgba(0, 0, 0, 0.18);
+      border-right: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
     }
 
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 1.15rem;
-      margin-bottom: 36px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .actions {
+    .brand {
       display: flex;
       gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
+      align-items: center;
+      padding: 8px 10px 20px;
     }
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 18px;
+      color: #fff;
+      background: linear-gradient(145deg, #ff4fa3, #ff2f92 50%, #c41a6e);
+      box-shadow:
+        0 8px 24px rgba(255, 47, 146, 0.45),
+        inset 0 1px 0 rgba(255,255,255,0.35);
+    }
+    .brand strong { display: block; font-size: 15px; letter-spacing: -0.02em; }
+    .brand span { font-size: 12px; color: var(--text-2); }
+
+    .nav-btn {
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      color: var(--text-2);
+      background: transparent;
+      padding: 12px 14px;
+      border-radius: 14px;
+      transition: 0.2s ease;
+      font-weight: 500;
+    }
+    .nav-btn:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+    }
+    .nav-btn.active {
+      color: var(--text);
+      background: rgba(255, 47, 146, 0.18);
+      box-shadow: inset 3px 0 0 var(--pink), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .sidebar-foot { margin-top: auto; padding-top: 12px; }
 
     .btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
-      padding: 14px 28px;
-      border-radius: 14px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.25s ease;
-      cursor: pointer;
       border: none;
-      font-family: inherit;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #ff2f92, #ff75b8);
-      color: white;
-      box-shadow: 0 4px 20px var(--accent-glow);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px var(--accent-glow);
-    }
-
-    .btn-secondary {
-      background: var(--card);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    .btn-secondary:hover {
-      background: var(--card-hover);
-      border-color: rgba(255,255,255,0.12);
-    }
-
-    .section {
-      padding: 40px 0 56px;
-    }
-
-    .section-label {
-      font-size: 0.75rem;
+      border-radius: 16px;
+      padding: 13px 16px;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent2);
-      margin-bottom: 8px;
-      text-align: center;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-size: 14px;
     }
-
-    .section-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 32px;
-      text-align: center;
+    .btn-primary {
+      width: 100%;
+      color: #fff;
+      background: linear-gradient(145deg, rgba(255,79,163,0.95), rgba(255,47,146,0.85));
+      box-shadow:
+        0 10px 28px rgba(255, 47, 146, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.28);
+      border: 1px solid rgba(255,255,255,0.18);
     }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-bottom: 36px;
+    .btn-primary:hover { filter: brightness(1.06); transform: translateY(-1px); }
+    .btn-glass {
+      color: var(--text);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
     }
-
-    @media (max-width: 768px) {
-      .steps { grid-template-columns: repeat(2, 1fr); }
+    .btn-glass:hover { background: rgba(255,255,255,0.12); }
+    .btn-cyan {
+      color: #062e2a;
+      background: linear-gradient(145deg, #5ff5e8, var(--cyan));
+      box-shadow: 0 8px 24px rgba(46,230,214,0.3);
     }
+    .btn-sm { padding: 9px 12px; font-size: 13px; border-radius: 12px; }
 
-    @media (max-width: 480px) {
-      .steps { grid-template-columns: 1fr; }
-    }
-
-    .step {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 20px;
-      text-align: center;
-      transition: all 0.25s ease;
+    .main {
       position: relative;
-      overflow: hidden;
+      z-index: 2;
+      padding: 22px 24px 28px;
+      overflow: auto;
     }
 
-    .step::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+    .topbar p { margin: 6px 0 0; color: var(--text-2); font-size: 14px; }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      flex: 1;
+      justify-content: flex-end;
     }
 
-    .step:hover {
-      background: var(--card-hover);
-      border-color: rgba(139, 92, 246, 0.2);
-      transform: translateY(-3px);
+    .search, .sort {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
-
-    .step:hover::before { opacity: 1; }
-
-    .step-num {
-      width: 36px;
-      height: 36px;
-      background: linear-gradient(135deg, #ff2f92, #ff75b8);
-      color: white;
-      border-radius: 10px;
+    .search {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 8px;
+      padding: 11px 14px;
+      min-width: min(100%, 260px);
+    }
+    .search:focus-within {
+      border-color: rgba(255, 47, 146, 0.45);
+      box-shadow: 0 0 0 3px rgba(255, 47, 146, 0.15), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .search input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--text);
+      font-size: 14px;
+    }
+    .search input::placeholder { color: var(--text-3); }
+    .sort {
+      color: var(--text);
+      padding: 11px 12px;
+      outline: none;
+      cursor: pointer;
+    }
+    .sort option { background: #1a1520; color: #fff; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .stat {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .stat .l { color: var(--text-2); font-size: 12px; }
+    .stat .v {
+      margin-top: 4px;
+      font-size: 1.45rem;
       font-weight: 700;
-      font-size: 0.9rem;
-      margin: 0 auto 14px;
-      box-shadow: 0 4px 12px var(--accent-glow);
+      letter-spacing: -0.03em;
+      background: linear-gradient(90deg, #ff75b8, var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
-    .step p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      font-weight: 500;
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .chip {
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,0.05);
+      color: var(--text-2);
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: 0.15s ease;
+      font-size: 13px;
+    }
+    .chip:hover { color: var(--text); background: rgba(255,255,255,0.09); }
+    .chip.active {
+      color: #fff;
+      background: linear-gradient(145deg, rgba(255,79,163,0.9), rgba(255,47,146,0.75));
+      border-color: rgba(255,255,255,0.2);
+      box-shadow: 0 6px 20px rgba(255,47,146,0.3);
+    }
+
+    .result-line {
+      color: var(--text-2);
+      font-size: 13px;
+      margin: 0 0 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    /* Liquid glass cards */
+    .card {
+      position: relative;
+      padding: 16px;
+      border-radius: 22px;
+      cursor: pointer;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(var(--blur-sm)) saturate(160%);
+      -webkit-backdrop-filter: blur(var(--blur-sm)) saturate(160%);
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.14);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(145deg, rgba(255,255,255,0.14), transparent 42%);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1.5px;
+      background: linear-gradient(135deg, rgba(255,47,146,0.9), rgba(180,80,255,0.5), rgba(46,230,214,0.9));
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      pointer-events: none;
+    }
+    .card:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow:
+        0 18px 40px rgba(255, 47, 146, 0.18),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+      border-color: transparent;
+      background: rgba(255,255,255,0.09);
+    }
+    .card:hover::after { opacity: 1; }
+
+    .card img {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: rgba(0,0,0,0.25);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      position: relative;
+      z-index: 1;
+    }
+    .card h3 {
+      margin: 12px 0 4px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      position: relative;
+      z-index: 1;
+    }
+    .card .meta {
+      color: var(--text-2);
+      font-size: 12px;
+      display: grid;
+      gap: 2px;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      display: inline-flex;
+      margin-top: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--cyan);
+      background: rgba(46, 230, 214, 0.12);
+      border: 1px solid rgba(46, 230, 214, 0.2);
+      padding: 4px 9px;
+      border-radius: 999px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .empty {
+      text-align: center;
+      padding: 56px 16px;
+      color: var(--text-2);
+    }
+
+    .glass-panel {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
 
     .source-box {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 6px 6px 6px 20px;
       display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      max-width: 620px;
-      margin: 0 auto;
-      transition: border-color 0.25s;
     }
-
-    .source-box:hover {
-      border-color: rgba(139, 92, 246, 0.3);
-    }
-
-    .source-url {
-      font-family: 'SF Mono', 'Fira Code', ui-monospace, monospace;
-      font-size: 0.85rem;
-      color: var(--success);
-      word-break: break-all;
+    .source-box code {
       flex: 1;
-    }
-
-    .copy-btn {
-      background: rgba(52, 211, 153, 0.12);
-      color: var(--success);
-      border: 1px solid rgba(52, 211, 153, 0.2);
-      padding: 10px 18px;
+      min-width: 160px;
+      padding: 10px 12px;
       border-radius: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      font-size: 0.85rem;
-      white-space: nowrap;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-
-    .copy-btn:hover {
-      background: rgba(52, 211, 153, 0.2);
-    }
-
-    .copy-btn.copied {
-      background: var(--success);
-      color: #09090b;
-      border-color: var(--success);
-    }
-
-    .apps-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .apps-header .section-title {
-      margin: 0;
-      text-align: left;
-      font-size: 1.4rem;
-    }
-
-    .apps-count {
-      color: var(--text-dim);
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .filters {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-    }
-
-    .filter-btn {
-      background: var(--card);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-      padding: 7px 16px;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-
-    .filter-btn:hover {
-      border-color: rgba(139, 92, 246, 0.3);
-      color: var(--text);
-    }
-
-    .filter-btn.active {
-      background: rgba(139, 92, 246, 0.15);
-      border-color: rgba(139, 92, 246, 0.4);
-      color: var(--accent2);
-    }
-
-    .apps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-      gap: 16px;
-    }
-
-    .app-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      animation: fadeUp 0.4s ease both;
-    }
-
-    .app-card:nth-child(1) { animation-delay: 0.05s; }
-    .app-card:nth-child(2) { animation-delay: 0.1s; }
-    .app-card:nth-child(3) { animation-delay: 0.15s; }
-    .app-card:nth-child(4) { animation-delay: 0.2s; }
-    .app-card:nth-child(5) { animation-delay: 0.25s; }
-    .app-card:nth-child(6) { animation-delay: 0.3s; }
-
-    .app-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: var(--radius);
-      background: linear-gradient(135deg, rgba(139,92,246,0.05), transparent 50%);
-      opacity: 0;
-      transition: opacity 0.3s;
-      pointer-events: none;
-    }
-
-    .app-card:hover {
-      background: var(--card-hover);
-      border-color: rgba(139, 92, 246, 0.2);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-
-    .app-card:hover::after { opacity: 1; }
-
-    .app-top {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 16px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .app-icon {
-      width: 68px;
-      height: 68px;
-      border-radius: 16px;
-      object-fit: cover;
-      flex-shrink: 0;
-      background: #1a1a22;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-    }
-
-    .app-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-width: 0;
-    }
-
-    .app-info h3 {
-      font-size: 1.1rem;
-      font-weight: 650;
-      margin-bottom: 4px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .app-meta {
-      color: var(--text-dim);
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-
-    .app-meta span {
-      color: var(--accent2);
-    }
-
-    .app-desc {
-      color: var(--text-muted);
-      font-size: 0.875rem;
-      margin-bottom: 18px;
-      flex-grow: 1;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      white-space: pre-line;
-      line-height: 1.55;
-      position: relative;
-      z-index: 1;
-    }
-
-    .app-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .app-size {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      font-weight: 500;
-      background: rgba(255,255,255,0.04);
-      padding: 5px 10px;
-      border-radius: 8px;
-    }
-
-    .app-link {
-      background: rgba(139, 92, 246, 0.12);
-      color: var(--accent2);
-      padding: 8px 16px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      transition: all 0.2s;
-      border: 1px solid rgba(139, 92, 246, 0.15);
-    }
-
-    .app-link:hover {
-      background: rgba(139, 92, 246, 0.22);
-      border-color: rgba(139, 92, 246, 0.3);
+      font-size: 12px;
+      color: var(--cyan);
+      background: rgba(0,0,0,0.28);
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-wrap: anywhere;
     }
 
     .warning {
-      background: rgba(251, 113, 133, 0.06);
-      border: 1px solid rgba(251, 113, 133, 0.15);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-      margin-top: 32px;
       display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
-
-    .warning-icon {
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .warning h3 {
-      color: #fb7185;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-
-    .warning p {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      line-height: 1.5;
-    }
-
-    footer {
-      padding: 40px 0 48px;
-      text-align: center;
-      border-top: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--accent2);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-
-    footer a:hover { color: var(--text); }
-
-    footer .heart { color: #fb7185; }
-
-    .loading {
-      text-align: center;
-      padding: 80px 20px;
-      color: var(--text-dim);
-      grid-column: 1 / -1;
-    }
-
-    .loading-spinner {
-      width: 32px;
-      height: 32px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 16px;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .error {
-      text-align: center;
-      padding: 48px 24px;
-      color: #fb7185;
-      background: var(--card);
-      border-radius: var(--radius);
-      border: 1px solid rgba(251, 113, 133, 0.2);
-      grid-column: 1 / -1;
-    }
-
-    .error small {
-      display: block;
+      gap: 12px;
       margin-top: 12px;
-      color: var(--text-dim);
-      font-size: 0.8rem;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 80, 120, 0.08);
+      border: 1px solid rgba(255, 100, 130, 0.22);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .warning h3 { margin: 0 0 4px; font-size: 0.9rem; color: #ff8fa3; }
+    .warning p { margin: 0; font-size: 0.85rem; color: var(--text-2); line-height: 1.5; }
+
+    .footer {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      color: var(--text-2);
+      font-size: 0.85rem;
+      line-height: 1.65;
+    }
+    .footer .brand-line { color: var(--text); margin: 0 0 8px; }
+    .footer strong { font-weight: 800; }
+    .footer a { color: var(--pink-2); text-decoration: none; font-weight: 500; }
+    .footer a:hover { color: #fff; }
+    .footer .heart { color: #ff6b9a; }
+    .footer .credit { opacity: 0.55; font-size: 0.8rem; margin: 10px 0 0; }
+
+    #view-detail { display: none; }
+    #view-detail.open { display: block; }
+    #view-catalog.hide { display: none; }
+
+    .back {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--stroke);
+      color: var(--text);
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 14px;
+      padding: 8px 14px;
+      border-radius: 12px;
+      backdrop-filter: blur(12px);
+    }
+    .back:hover { background: rgba(255,255,255,0.1); }
+
+    .hero {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 22px;
+      margin-bottom: 14px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .hero img {
+      width: 76px;
+      height: 76px;
+      border-radius: 20px;
+      background: rgba(0,0,0,0.25);
     }
 
-    @media (max-width: 600px) {
-      h1 { font-size: 2.2rem; }
-      .logo { width: 80px; height: 80px; border-radius: 20px; }
-      header { padding: 48px 0 36px; }
-      .container { padding: 0 16px; }
+    .kv {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .kv div {
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+    }
+    .kv span { display: block; color: var(--text-2); font-size: 12px; }
+
+    .panel {
+      padding: 16px;
+      border-radius: 18px;
+      margin-bottom: 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .panel h2 { margin: 0 0 10px; font-size: 15px; }
+    .ver-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 14px;
+    }
+
+    .site-credit {
+      margin-top: 14px;
+      color: var(--text-3);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .stage { padding: 10px 8px 20px; }
+      .shell {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        border-radius: 22px;
+      }
+      .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+      .brand { width: 100%; padding-bottom: 6px; }
+      .sidebar-foot { width: 100%; margin-top: 8px; }
+      .stats { grid-template-columns: 1fr; }
+      .toolbar { width: 100%; justify-content: stretch; }
+      .search { flex: 1; min-width: 0; }
+      .main { padding: 16px; }
+    }
+
+    @supports not ((backdrop-filter: blur(2px)) or (-webkit-backdrop-filter: blur(2px))) {
+      .shell, .card, .stat, .search, .glass-panel, .hero, .panel {
+        background: rgba(28, 22, 36, 0.92);
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo-wrap">
-        <img src="icons/app_icon.png" alt="GeraStore" class="logo"
-             onerror="this.src='https://gkuhtov.github.io/GeraStore/icons/app_icon.png'">
-      </div>
-      <div class="badge">IPA Repository для GBox</div>
-      <h1>GeraKStore</h1>
-      <p class="subtitle">Русский каталог приложений для GBox<br>by Гера Кухтов (ГЕРЫЧ)</p>
-      <div class="actions">
-        <a href="#how-to" class="btn btn-primary">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-          Добавить источник
-        </a>
-        <a href="https://github.com/gkuhtov/GeraStore" class="btn btn-secondary" target="_blank" rel="noopener">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <section class="section" id="how-to">
-    <div class="container">
-      <div class="section-label">Инструкция</div>
-      <h2 class="section-title">Как добавить в GBox</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <p>Откройте GBox → Источники</p>
+  <div class="stage">
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">G</div>
+          <div>
+            <strong>GeraKStore</strong>
+            <span>IPA каталог</span>
+          </div>
         </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <p>Нажмите «+» / Добавить</p>
+        <button type="button" class="nav-btn active" id="navCatalog">▣ Каталог</button>
+        <button type="button" class="nav-btn" id="navSource">☁ Source</button>
+        <div class="sidebar-foot">
+          <button type="button" class="btn btn-primary" id="btnCopySource">＋ Добавить Source</button>
         </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <p>Вставьте ссылку ниже</p>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <p>Готово! Приложения появятся</p>
-        </div>
-      </div>
+      </aside>
 
-      <div class="source-box">
-        <code class="source-url" id="source-url">https://gkuhtov.github.io/GeraStore/repo.json</code>
-        <button class="copy-btn" onclick="copySource()" id="copy-btn">Скопировать</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top: 8px;">
-    <div class="container">
-      <div class="apps-header">
-        <h2 class="section-title">Приложения</h2>
-        <span class="apps-count" id="apps-count"></span>
-      </div>
-      <div class="apps-toolbar" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:8px">
-        <div class="filters" id="filters" style="margin:0"></div>
-        <select id="sort-select" style="margin-left:auto;background:#141418;color:#fafafa;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px 12px">
-          <option value="name">По имени</option>
-          <option value="size">По размеру</option>
-          <option value="version">По версии</option>
-        </select>
-      </div>
-      <p id="result-line" style="color:#a1a1aa;font-size:13px;margin:0 0 12px"></p>
-      <div class="apps-grid" id="apps-grid">
-        <div class="loading">
-          <div class="loading-spinner"></div>
-          Загрузка приложений…
-        </div>
-      </div>
-
-      <div class="warning">
-        <div class="warning-icon">⚠️</div>
-        <div>
-          <h3>Важно</h3>
-          <p>Все приложения требуют самоподписи (SELF_SIGN). Использование неофициальных IPA может нарушать правила App Store и нести риски. Автор не несёт ответственности. Используйте на свой страх и риск.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>
-        GeraKStore · by <strong>ГЕРЫЧ</strong><br><br>
-        <a href="https://github.com/gkuhtov/GeraStore" target="_blank" rel="noopener">GitHub</a>
-        &nbsp;·&nbsp;
-        <a href="https://t.me/madebygood" target="_blank" rel="noopener">Telegram</a>
-      </p>
-      <p style="margin-top: 12px; opacity: 0.5;">Сделано с <span class="heart">♥</span> для сообщества GBox</p>
-    </div>
-  </footer>
-
-  <script>
-    const REPO_URLS = [
-      'repo.json',
-      'https://gkuhtov.github.io/GeraStore/repo.json',
-      'https://raw.githubusercontent.com/gkuhtov/GeraStore/main/repo.json'
-    ];
-
-    function formatSize(bytes) {
-      if (!bytes || bytes === 0) return '—';
-      const mb = bytes / (1024 * 1024);
-      return mb >= 10 ? Math.round(mb) + ' МБ' : mb.toFixed(1) + ' МБ';
-    }
-
-    function copySource() {
-      const url = document.getElementById('source-url').textContent;
-      const btn = document.getElementById('copy-btn');
-      navigator.clipboard.writeText(url).then(() => {
-        btn.textContent = 'Скопировано!';
-        btn.classList.add('copied');
-        setTimeout(() => {
-          btn.textContent = 'Скопировать';
-          btn.classList.remove('copied');
-        }, 2000);
-      }).catch(() => {
-        const ta = document.createElement('textarea');
-        ta.value = url;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        btn.textContent = 'Скопировано!';
-        btn.classList.add('copied');
-        setTimeout(() => {
-          btn.textContent = 'Скопировать';
-          btn.classList.remove('copied');
-        }, 2000);
-      });
-    }
-
-    let allApps = [];
-    let categories = [];
-
-    async function tryFetch(url) {
-      const res = await fetch(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now(), {
-        cache: 'no-store'
-      });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      return res.json();
-    }
-
-    async function loadRepo() {
-      let data = null;
-      let lastError = null;
-
-      for (const url of REPO_URLS) {
-        try {
-          data = await tryFetch(url);
-          break;
-        } catch (e) {
-          lastError = e;
-        }
-      }
-
-      if (!data) {
-        const isLocal = location.protocol === 'file:';
-        document.getElementById('apps-grid').innerHTML = `
-          <div class="error">
-            <strong>Не удалось загрузить список приложений</strong><br>
-            ${isLocal
-              ? 'Файл открыт локально. Залейте на GitHub Pages и откройте через https://gkuhtov.github.io/GeraStore/'
-              : 'Проверьте интернет или попробуйте позже.'}
-            <small>${lastError ? lastError.message : ''}</small>
-          </div>`;
-        return;
-      }
-
-      categories = data.appCategories || [];
-      // GBox-native: appRepositories | AltStore: apps
-      const rawList = data.appRepositories || data.apps || [];
-      allApps = rawList.map(app => {
-        const catIndex = app.appCateIndex ?? 0;
-        const category =
-          app.category ||
-          (categories[catIndex] !== undefined ? categories[catIndex] : null) ||
-          'Другое';
-        if (category && !categories.includes(category)) {
-          categories.push(category);
-        }
-        return {
-          name: app.appName || app.name || 'Без названия',
-          version: app.appVersion || app.version || '—',
-          icon: app.appImage || app.iconURL || '',
-          description: app.appDescription || app.localizedDescription || app.subtitle || '',
-          size: app.appSize || app.size || app.fileSize || 0,
-          category: category,
-          download: app.appPackage || app.downloadURL || ''
-        };
-      });
-      if (!data.appCategories || !data.appCategories.length) {
-        categories = [...new Set(allApps.map(a => a.category).filter(Boolean))];
-      }
-
-      renderFilters();
-      renderApps(typeof currentList === 'function' ? currentList() : allApps);
-      document.getElementById('apps-count').textContent = allApps.length + ' ' + pluralApps(allApps.length);
-    }
-
-    function pluralApps(n) {
-      if (n % 10 === 1 && n % 100 !== 11) return 'приложение';
-      if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) return 'приложения';
-      return 'приложений';
-    }
-
-    let activeCat = 'all';
-
-    function sortApps(list) {
-      const mode = (document.getElementById('sort-select') || {}).value || 'name';
-      const arr = list.slice();
-      if (mode === 'size') arr.sort((a, b) => (b.size || 0) - (a.size || 0));
-      else if (mode === 'version') arr.sort((a, b) => String(b.version).localeCompare(String(a.version), undefined, { numeric: true }));
-      else arr.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
-      return arr;
-    }
-
-    function currentList() {
-      const base = activeCat === 'all' ? allApps : allApps.filter(a => a.category === activeCat);
-      return sortApps(base);
-    }
-
-    function renderFilters() {
-      const usedCats = [...new Set(allApps.map(a => a.category))];
-      const container = document.getElementById('filters');
-      container.innerHTML = '<button class="filter-btn active" data-cat="all">Все</button>';
-      usedCats.forEach(cat => {
-        const btn = document.createElement('button');
-        btn.className = 'filter-btn';
-        btn.dataset.cat = cat;
-        btn.textContent = cat;
-        container.appendChild(btn);
-      });
-
-      container.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeCat = btn.dataset.cat;
-          renderApps(currentList());
-        });
-      });
-
-      const sortEl = document.getElementById('sort-select');
-      if (sortEl && !sortEl._bound) {
-        sortEl._bound = true;
-        sortEl.addEventListener('change', () => renderApps(currentList()));
-      }
-    }
-
-    function renderApps(apps) {
-      const grid = document.getElementById('apps-grid');
-      const line = document.getElementById('result-line');
-      if (line) {
-        line.textContent = apps.length === allApps.length
-          ? (allApps.length + ' ' + pluralApps(allApps.length))
-          : ('Показано ' + apps.length + ' из ' + allApps.length);
-      }
-      if (!apps.length) {
-        grid.innerHTML = '<div class="loading">Нет приложений в этой категории</div>';
-        return;
-      }
-
-      grid.innerHTML = apps.map(app => `
-        <div class="app-card">
-          <div class="app-top">
-            <img class="app-icon" src="${app.icon}" alt="${app.name}" loading="lazy"
-                 onerror="this.src='https://gkuhtov.github.io/GeraStore/icons/app_icon.png'">
-            <div class="app-info">
-              <h3>${app.name}</h3>
-              <div class="app-meta"><span>${app.category}</span> · v${app.version}</div>
+      <main class="main">
+        <div id="view-catalog">
+          <div class="topbar">
+            <div>
+              <h1>Каталог приложений</h1>
+              <p id="subtitle">Загрузка…</p>
+            </div>
+            <div class="toolbar">
+              <div class="search">
+                <span aria-hidden="true">⌕</span>
+                <input id="search" type="search" placeholder="Поиск приложений…" autocomplete="off" />
+              </div>
+              <select class="sort" id="sort" title="Сортировка">
+                <option value="name">По имени</option>
+                <option value="size">По размеру</option>
+                <option value="version">По версии</option>
+              </select>
             </div>
           </div>
-          <div class="app-desc">${app.description || 'Описание отсутствует'}</div>
-          <div class="app-footer">
-            <span class="app-size">${formatSize(app.size)}</span>
-            ${app.download ? `<a class="app-link" href="${app.download}" target="_blank" rel="noopener">Скачать IPA</a>` : ''}
+
+          <div class="stats">
+            <div class="stat"><div class="l">Приложений</div><div class="v" id="statApps">—</div></div>
+            <div class="stat"><div class="l">Категорий</div><div class="v" id="statCats">—</div></div>
+            <div class="stat"><div class="l">Найдено</div><div class="v" id="statFound">—</div></div>
+          </div>
+
+          <div class="chips" id="chips"></div>
+          <p class="result-line" id="resultLine"></p>
+          <div class="grid" id="grid"></div>
+          <div class="empty" id="empty" hidden>Ничего не найдено</div>
+
+          <div class="glass-panel source-box" id="source">
+            <span style="color:var(--text-2)">Source для GBox:</span>
+            <code id="sourceUrl">https://gkuhtov.github.io/GeraStore/repo.json</code>
+            <button type="button" class="btn btn-glass btn-sm" id="btnCopyInline">Копировать</button>
+          </div>
+
+          <div class="warning">
+            <div>⚠️</div>
+            <div>
+              <h3>Важно</h3>
+              <p>
+                Все приложения требуют самоподписи (SELF_SIGN). Использование неофициальных IPA
+                может нарушать правила App Store и нести риски. Автор не несёт ответственности.
+                Используйте на свой страх и риск.
+              </p>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p class="brand-line">GeraKStore · by <strong>ГЕРЫЧ</strong></p>
+            <p>
+              <a href="https://github.com/gkuhtov/GeraStore" target="_blank" rel="noopener">GitHub</a>
+              &nbsp;·&nbsp;
+              <a href="https://t.me/madebygood" target="_blank" rel="noopener">Telegram</a>
+            </p>
+            <p class="credit">Сделано с <span class="heart">♥</span> для сообщества GBox</p>
+          </footer>
+        </div>
+
+        <div id="view-detail">
+          <button type="button" class="back" id="btnBack">← Назад</button>
+          <div class="hero" id="detailHero"></div>
+          <div class="kv" id="detailKv"></div>
+          <div class="panel">
+            <h2>Описание</h2>
+            <p id="detailDesc" style="margin:0;white-space:pre-wrap;color:var(--text-2)"></p>
+          </div>
+          <div class="panel">
+            <h2>Версии</h2>
+            <div id="detailVersions"></div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn btn-primary" style="width:auto;min-width:140px" id="btnDownload" href="#" target="_blank" rel="noopener">Скачать IPA</a>
+            <button type="button" class="btn btn-glass" id="btnCopy2">Копировать Source</button>
           </div>
         </div>
-      `).join('');
+      </main>
+    </div>
+    <div class="site-credit">GeraKStore · liquid glass</div>
+  </div>
+
+  <script>
+(function () {
+  var REPO_URLS = [
+    "repo.json",
+    "https://gkuhtov.github.io/GeraStore/repo.json",
+    "https://raw.githubusercontent.com/gkuhtov/GeraStore/main/repo.json"
+  ];
+  var SOURCE = "https://gkuhtov.github.io/GeraStore/repo.json";
+  var ICON_FALLBACK =
+    "data:image/svg+xml," +
+    encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff2f92"/><stop offset="1" stop-color="#2ee6d6"/></linearGradient></defs><rect fill="url(#g)" width="58" height="58" rx="16" opacity="0.35"/><text x="29" y="34" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="13" font-family="sans-serif">App</text></svg>'
+    );
+
+  var allApps = [];
+  var categories = [];
+  var activeCat = "Все";
+  var query = "";
+  var sortBy = "name";
+
+  function $(id) { return document.getElementById(id); }
+
+  function formatSize(bytes) {
+    var n = Number(bytes) || 0;
+    if (n <= 0) return "—";
+    var mb = n / (1024 * 1024);
+    return mb >= 100 ? Math.round(mb) + " МБ" : mb.toFixed(1) + " МБ";
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function copySource() {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(SOURCE).then(function () {
+        alert("Source скопирован:\n" + SOURCE);
+      }).catch(function () {
+        prompt("Скопируйте Source:", SOURCE);
+      });
+    } else {
+      prompt("Скопируйте Source:", SOURCE);
+    }
+  }
+
+  ["btnCopySource", "btnCopyInline", "btnCopy2"].forEach(function (id) {
+    var el = $(id);
+    if (el) el.onclick = copySource;
+  });
+
+  $("navCatalog").onclick = function () { showCatalog(); };
+  $("navSource").onclick = function () {
+    showCatalog();
+    var el = $("source");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+  $("btnBack").onclick = function () { showCatalog(); };
+  $("search").addEventListener("input", function () {
+    query = $("search").value;
+    render();
+  });
+  $("sort").addEventListener("change", function () {
+    sortBy = $("sort").value;
+    render();
+  });
+
+  function showCatalog() {
+    $("view-catalog").classList.remove("hide");
+    $("view-detail").classList.remove("open");
+    $("navCatalog").classList.add("active");
+  }
+
+  function showDetail(app) {
+    $("view-catalog").classList.add("hide");
+    $("view-detail").classList.add("open");
+    $("navCatalog").classList.remove("active");
+
+    $("detailHero").innerHTML =
+      '<img src="' + escapeHtml(app.icon || ICON_FALLBACK) + '" alt="" onerror="this.onerror=null;this.src=\'' + ICON_FALLBACK + '\'" />' +
+      "<div><h2 style=\"margin:0 0 4px;letter-spacing:-0.02em\">" + escapeHtml(app.name) + "</h2>" +
+      '<div style="color:var(--text-2)">v' + escapeHtml(app.version) + " · " + escapeHtml(app.category) + "</div></div>";
+
+    $("detailKv").innerHTML = [
+      ["Bundle ID", app.bundleId || "—"],
+      ["Версия", app.version],
+      ["Размер", app.sizeText],
+      ["Категория", app.category],
+      ["Разработчик", app.developer || "—"]
+    ].map(function (pair) {
+      return "<div><span>" + pair[0] + "</span><strong>" + escapeHtml(String(pair[1])) + "</strong></div>";
+    }).join("");
+
+    $("detailDesc").textContent = app.description || "Описание отсутствует";
+
+    var vers = app.versions || [];
+    $("detailVersions").innerHTML = vers.length
+      ? vers.map(function (v) {
+          return '<div class="ver-row"><span>v' + escapeHtml(v.version || "—") +
+            '</span><span style="color:var(--text-2)">' + formatSize(v.size) + "</span></div>";
+        }).join("")
+      : '<p style="margin:0;color:var(--text-2)">Версии не указаны</p>';
+
+    var dl = $("btnDownload");
+    if (app.downloadURL) {
+      dl.href = app.downloadURL;
+      dl.style.opacity = "1";
+      dl.style.pointerEvents = "auto";
+    } else {
+      dl.href = "#";
+      dl.style.opacity = "0.5";
+      dl.style.pointerEvents = "none";
+    }
+  }
+
+  function filtered() {
+    var list = allApps.filter(function (app) {
+      var byCat = activeCat === "Все" || app.category === activeCat;
+      var q = query.trim().toLowerCase();
+      var byQ =
+        !q ||
+        app.name.toLowerCase().indexOf(q) !== -1 ||
+        (app.bundleId || "").toLowerCase().indexOf(q) !== -1 ||
+        (app.description || "").toLowerCase().indexOf(q) !== -1;
+      return byCat && byQ;
+    });
+    list = list.slice().sort(function (a, b) {
+      if (sortBy === "size") return (b.size || 0) - (a.size || 0);
+      if (sortBy === "version")
+        return String(b.version).localeCompare(String(a.version), undefined, { numeric: true });
+      return a.name.localeCompare(b.name, "ru");
+    });
+    return list;
+  }
+
+  function renderChips() {
+    var used = {};
+    allApps.forEach(function (a) {
+      if (a.category) used[a.category] = true;
+    });
+    var list = ["Все"].concat(
+      Object.keys(used).sort(function (a, b) {
+        return a.localeCompare(b, "ru");
+      })
+    );
+    $("chips").innerHTML = list
+      .map(function (c) {
+        return (
+          '<button type="button" class="chip' +
+          (c === activeCat ? " active" : "") +
+          '" data-cat="' +
+          escapeHtml(c) +
+          '">' +
+          escapeHtml(c) +
+          "</button>"
+        );
+      })
+      .join("");
+    $("chips").querySelectorAll(".chip").forEach(function (btn) {
+      btn.onclick = function () {
+        activeCat = btn.getAttribute("data-cat");
+        render();
+      };
+    });
+  }
+
+  function renderGrid() {
+    var apps = filtered();
+    $("empty").hidden = apps.length > 0;
+    $("statFound").textContent = String(apps.length);
+    $("resultLine").textContent =
+      query || activeCat !== "Все"
+        ? "Показано " + apps.length + " из " + allApps.length
+        : allApps.length + " приложений";
+
+    $("grid").innerHTML = apps
+      .map(function (app, i) {
+        return (
+          '<article class="card" data-i="' +
+          i +
+          '">' +
+          '<img src="' +
+          escapeHtml(app.icon || ICON_FALLBACK) +
+          '" alt="" onerror="this.onerror=null;this.src=\'' +
+          ICON_FALLBACK +
+          '\'" />' +
+          "<h3>" +
+          escapeHtml(app.name) +
+          "</h3>" +
+          '<div class="meta"><span>v' +
+          escapeHtml(app.version) +
+          " · " +
+          escapeHtml(app.sizeText) +
+          "</span><span>" +
+          escapeHtml(app.category) +
+          "</span></div>" +
+          '<div class="badge">Ready</div></article>'
+        );
+      })
+      .join("");
+
+    var list = apps;
+    $("grid").querySelectorAll(".card").forEach(function (card) {
+      card.onclick = function () {
+        showDetail(list[Number(card.getAttribute("data-i"))]);
+      };
+    });
+  }
+
+  function render() {
+    renderChips();
+    renderGrid();
+  }
+
+  function normalize(raw, cats) {
+    var versions = raw.versions || [];
+    var latest = versions.length ? versions[versions.length - 1] : {};
+    var category = raw.category || "";
+    if (!category && typeof raw.appCateIndex === "number" && cats[raw.appCateIndex]) {
+      category = cats[raw.appCateIndex];
+    }
+    if (!category) category = "Другое";
+    var size = raw.size || raw.appSize || raw.fileSize || latest.size || 0;
+    return {
+      name: String(raw.appName || raw.name || "Без названия").trim(),
+      bundleId: raw.bundleIdentifier || "",
+      version: raw.appVersion || raw.version || latest.version || "—",
+      size: size,
+      sizeText: formatSize(size),
+      icon: raw.appImage || raw.iconURL || "",
+      description:
+        raw.appDescription || raw.localizedDescription || latest.localizedDescription || "",
+      developer: raw.developerName || "",
+      downloadURL: raw.appPackage || raw.downloadURL || latest.downloadURL || "",
+      category: category,
+      versions: versions
+    };
+  }
+
+  async function loadRepo() {
+    var data = null;
+    var lastErr = null;
+    for (var i = 0; i < REPO_URLS.length; i++) {
+      var url = REPO_URLS[i];
+      try {
+        var res = await fetch(url + (url.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now(), {
+          cache: "no-store"
+        });
+        if (!res.ok) throw new Error(url + " → " + res.status);
+        data = await res.json();
+        break;
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    if (!data) {
+      $("subtitle").textContent = "Ошибка загрузки";
+      $("grid").innerHTML =
+        '<div class="empty">Не удалось загрузить repo.json<br><span style="font-size:12px">' +
+        escapeHtml(String(lastErr && lastErr.message ? lastErr.message : lastErr)) +
+        "</span></div>";
+      return;
     }
 
-    loadRepo();
+    categories = data.appCategories || [];
+    var rawList = data.appRepositories || data.apps || [];
+    allApps = rawList.map(function (a) {
+      return normalize(a, categories);
+    });
+    if (!categories.length) {
+      var s = {};
+      allApps.forEach(function (a) {
+        if (a.category) s[a.category] = true;
+      });
+      categories = Object.keys(s);
+    }
+
+    $("statApps").textContent = String(allApps.length);
+    $("statCats").textContent = String(categories.length);
+    $("subtitle").textContent = allApps.length + " приложений · liquid glass";
+    render();
+    showCatalog();
+  }
+
+  loadRepo();
+})();
   </script>
 </body>
 </html>
