@@ -1,993 +1,352 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GeraKStore — каталог IPA для GBox</title>
-  <meta name="description" content="Русский каталог IPA для GBox. Витрина GeraKStore." />
-  <link rel="icon" href="icons/app_icon.png" />
-  <style>
-    :root {
-      --bg: #0c0a0f;
-      --bg-elev: #141018;
-      --card: #1a1520;
-      --card-hover: #221c2a;
-      --pink: #ff2f92;
-      --pink-2: #ff4fa3;
-      --pink-deep: #c4186a;
-      --cyan: #2ee6d6;
-      --text: #f6f3f7;
-      --muted: #a39aa8;
-      --line: rgba(255,255,255,0.08);
-      --radius: 20px;
-      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
-      --header-h: 72px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: var(--font);
-      color: var(--text);
-      background: var(--bg);
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-decoration: none; }
-    button, input, select { font: inherit; }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GeraKStore — каталог IPA для GBox</title>
+<meta name="description" content="Русский каталог IPA для GBox. Витрина GeraKStore by ГЕРЫЧ."/>
+<link rel="icon" href="icons/app_icon.png"/>
+<style>
+:root{
+  --bg:#0b090e;
+  --card:#16121c;
+  --card2:#1c1724;
+  --pink:#ff2f92;
+  --pink2:#ff4fa3;
+  --cyan:#2ee6d6;
+  --text:#f5f2f6;
+  --muted:#9e96a6;
+  --line:rgba(255,255,255,.08);
+  --radius:20px;
+  --font:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
 
-    /* Depth layers (parallax) */
-    .depth {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      overflow: hidden;
-    }
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.55;
-      will-change: transform;
-    }
-    .blob-a {
-      width: 55vw; height: 55vw; max-width: 680px; max-height: 680px;
-      top: -12%; left: -10%;
-      background: radial-gradient(circle, rgba(255,47,146,0.55), transparent 70%);
-    }
-    .blob-b {
-      width: 45vw; height: 45vw; max-width: 520px; max-height: 520px;
-      top: 10%; right: -8%;
-      background: radial-gradient(circle, rgba(46,230,214,0.35), transparent 70%);
-    }
-    .blob-c {
-      width: 50vw; height: 50vw; max-width: 600px; max-height: 600px;
-      bottom: -15%; left: 30%;
-      background: radial-gradient(circle, rgba(140,60,255,0.22), transparent 70%);
-    }
+/* depth backdrop */
+.depth{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);will-change:transform;opacity:.5}
+.blob-a{width:min(70vw,720px);height:min(70vw,720px);top:-18%;left:-12%;background:radial-gradient(circle,rgba(255,47,146,.55),transparent 68%)}
+.blob-b{width:min(55vw,560px);height:min(55vw,560px);top:8%;right:-10%;background:radial-gradient(circle,rgba(46,230,214,.32),transparent 68%)}
+.blob-c{width:min(60vw,640px);height:min(60vw,640px);bottom:-20%;left:25%;background:radial-gradient(circle,rgba(120,50,255,.2),transparent 68%)}
+.grain{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
-    .page { position: relative; z-index: 1; }
+.page{position:relative;z-index:1}
 
-    /* Header */
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      height: var(--header-h);
-      display: flex;
-      align-items: center;
-      backdrop-filter: blur(18px) saturate(160%);
-      -webkit-backdrop-filter: blur(18px) saturate(160%);
-      background: rgba(12, 10, 15, 0.72);
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.25s, background 0.25s, box-shadow 0.25s;
-    }
-    .header.scrolled {
-      border-bottom-color: var(--line);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-      background: rgba(12, 10, 15, 0.88);
-    }
-    .header-inner {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    .logo-mark {
-      width: 40px; height: 40px;
-      border-radius: 12px;
-      display: grid; place-items: center;
-      background: linear-gradient(145deg, var(--pink-2), var(--pink-deep));
-      box-shadow: 0 8px 24px rgba(255,47,146,0.35);
-      font-weight: 800;
-    }
-    .logo span { display: block; font-size: 12px; color: var(--muted); font-weight: 500; }
-    .nav {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .nav a, .nav button {
-      border: none;
-      background: transparent;
-      color: var(--muted);
-      padding: 8px 12px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: 0.15s;
-    }
-    .nav a:hover, .nav button:hover { color: var(--text); background: rgba(255,255,255,0.05); }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      border: none;
-      border-radius: 14px;
-      padding: 12px 18px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.18s;
-    }
-    .btn-primary {
-      color: #fff;
-      background: linear-gradient(145deg, var(--pink-2), var(--pink));
-      box-shadow: 0 10px 28px rgba(255,47,146,0.3);
-    }
-    .btn-primary:hover { filter: brightness(1.06); transform: translateY(-1px); }
-    .btn-ghost {
-      color: var(--text);
-      background: rgba(255,255,255,0.06);
-      border: 1px solid var(--line);
-    }
-    .btn-ghost:hover { background: rgba(255,255,255,0.1); }
-    .btn-sm { padding: 9px 14px; font-size: 13px; border-radius: 12px; }
+/* header */
+.header{position:sticky;top:0;z-index:40;backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);background:rgba(11,9,14,.65);border-bottom:1px solid transparent;transition:.25s}
+.header.on{border-bottom-color:var(--line);background:rgba(11,9,14,.88);box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.header-in{width:min(1100px,calc(100% - 28px));margin:0 auto;height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:-.02em}
+.logo-m{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-weight:800;background:linear-gradient(145deg,var(--pink2),#c4186a);box-shadow:0 8px 22px rgba(255,47,146,.35)}
+.logo small{display:block;font-size:11px;color:var(--muted);font-weight:500}
+.nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav a{color:var(--muted);padding:8px 12px;border-radius:999px;font-size:14px}
+.nav a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:14px;padding:12px 18px;font-weight:600;cursor:pointer;transition:.18s}
+.btn-p{color:#fff;background:linear-gradient(145deg,var(--pink2),var(--pink));box-shadow:0 10px 26px rgba(255,47,146,.3)}
+.btn-p:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn-g{color:var(--text);background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.btn-g:hover{background:rgba(255,255,255,.1)}
+.btn-s{padding:8px 14px;font-size:13px;border-radius:12px}
 
-    /* Hero */
-    .hero {
-      width: min(1120px, calc(100% - 32px));
-      margin: 28px auto 8px;
-      padding: 48px 28px 40px;
-      border-radius: 28px;
-      position: relative;
-      overflow: hidden;
-      background:
-        linear-gradient(135deg, rgba(255,47,146,0.16), rgba(46,230,214,0.06) 45%, rgba(20,16,28,0.9));
-      border: 1px solid var(--line);
-      box-shadow: 0 24px 60px rgba(0,0,0,0.3);
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 80% at 90% 20%, rgba(46,230,214,0.12), transparent 50%),
-        radial-gradient(ellipse 50% 60% at 10% 80%, rgba(255,47,146,0.15), transparent 50%);
-      pointer-events: none;
-    }
-    .hero-content { position: relative; z-index: 1; max-width: 640px; }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(255,47,146,0.15);
-      border: 1px solid rgba(255,47,146,0.3);
-      color: var(--pink-2);
-      font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-    .hero h1 {
-      margin: 0 0 12px;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-    }
-    .hero p {
-      margin: 0 0 22px;
-      color: var(--muted);
-      font-size: 1.05rem;
-      line-height: 1.55;
-      max-width: 46ch;
-    }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+/* hero */
+.hero{width:min(1100px,calc(100% - 28px));margin:24px auto 12px;padding:44px 28px 36px;border-radius:28px;position:relative;overflow:hidden;border:1px solid var(--line);
+background:linear-gradient(135deg,rgba(255,47,146,.14),rgba(46,230,214,.05) 50%,rgba(18,14,24,.95));
+box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 90% 10%,rgba(46,230,214,.1),transparent 50%);pointer-events:none}
+.hero-in{position:relative;z-index:1;max-width:560px}
+.badge{display:inline-flex;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:600;color:var(--pink2);background:rgba(255,47,146,.14);border:1px solid rgba(255,47,146,.28);margin-bottom:14px}
+.hero h1{margin:0 0 12px;font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.12;letter-spacing:-.03em}
+.hero p{margin:0 0 20px;color:var(--muted);font-size:1.05rem;line-height:1.55}
+.hero-acts{display:flex;flex-wrap:wrap;gap:10px}
 
-    /* Reveal animation */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-    .reveal.in {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.08s; }
-    .reveal-delay-2 { transition-delay: 0.16s; }
-    .reveal-delay-3 { transition-delay: 0.24s; }
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}
 
-    /* Toolbar / catalog */
-    .section {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 36px 0 8px;
-    }
-    .section-head {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 18px;
-    }
-    .section-head h2 {
-      margin: 0;
-      font-size: 1.45rem;
-      letter-spacing: -0.02em;
-    }
-    .section-head p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+.wrap{width:min(1100px,calc(100% - 28px));margin:0 auto;padding:28px 0 8px}
+.sec-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:16px}
+.sec-h h2{margin:0;font-size:1.4rem;letter-spacing:-.02em}
+.sec-h p{margin:4px 0 0;color:var(--muted);font-size:14px}
 
-    .toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 16px;
-    }
-    .search {
-      flex: 1;
-      min-width: 200px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--line);
-    }
-    .search:focus-within {
-      border-color: rgba(255,47,146,0.4);
-      box-shadow: 0 0 0 3px rgba(255,47,146,0.12);
-    }
-    .search input {
-      flex: 1;
-      border: none;
-      outline: none;
-      background: transparent;
-      color: var(--text);
-    }
-    .search input::placeholder { color: var(--muted); }
-    .sort {
-      padding: 12px 14px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--line);
-      color: var(--text);
-      outline: none;
-    }
-    .sort option { background: #1a1520; }
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.search{flex:1;min-width:180px;display:flex;align-items:center;gap:8px;padding:11px 14px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.search:focus-within{border-color:rgba(255,47,146,.4);box-shadow:0 0 0 3px rgba(255,47,146,.12)}
+.search input{flex:1;border:0;outline:0;background:transparent;color:var(--text)}
+.search input::placeholder{color:var(--muted)}
+.sort{padding:11px 12px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--text);outline:0}
+.sort option{background:#16121c}
 
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 18px;
-    }
-    .chip {
-      border: 1px solid var(--line);
-      background: transparent;
-      color: var(--muted);
-      padding: 8px 14px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: 0.15s;
-    }
-    .chip:hover { color: var(--text); border-color: rgba(255,255,255,0.18); }
-    .chip.active {
-      color: #fff;
-      background: var(--pink);
-      border-color: var(--pink);
-      box-shadow: 0 6px 18px rgba(255,47,146,0.28);
-    }
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--muted);padding:8px 14px;border-radius:999px;cursor:pointer}
+.chip:hover{color:var(--text)}
+.chip.on{color:#fff;background:var(--pink);border-color:var(--pink);box-shadow:0 6px 18px rgba(255,47,146,.28)}
+.res{color:var(--muted);font-size:13px;margin:0 0 14px}
 
-    .result-line {
-      color: var(--muted);
-      font-size: 13px;
-      margin: 0 0 14px;
-    }
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:12px;cursor:pointer;transition:transform .22s,box-shadow .22s,border-color .22s,background .22s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,47,146,.07),transparent 45%);opacity:0;transition:.22s;pointer-events:none}
+.card:hover{transform:translateY(-6px);background:var(--card2);border-color:rgba(255,47,146,.25);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.card:hover::before{opacity:1}
+.card-top{display:flex;gap:12px;align-items:center;position:relative;z-index:1}
+.card img{width:62px;height:62px;border-radius:16px;object-fit:cover;background:#2a2433;box-shadow:0 8px 18px rgba(0,0,0,.25);flex-shrink:0}
+.card h3{margin:0 0 3px;font-size:1.05rem;letter-spacing:-.02em}
+.card .meta{color:var(--muted);font-size:12px}
+.card-desc{position:relative;z-index:1;color:var(--muted);font-size:13px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:3.5em;flex:1}
+.card-foot{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.size{font-weight:700;font-size:14px;background:linear-gradient(90deg,var(--pink2),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge-n{font-size:11px;font-weight:600;color:var(--cyan);background:rgba(46,230,214,.12);border:1px solid rgba(46,230,214,.2);padding:3px 8px;border-radius:999px}
+.empty{text-align:center;padding:48px 12px;color:var(--muted);grid-column:1/-1}
 
-    /* Product grid — store style */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(255,47,146,0.08), transparent 40%);
-      opacity: 0;
-      transition: opacity 0.25s;
-      pointer-events: none;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      background: var(--card-hover);
-      border-color: rgba(255,47,146,0.28);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,47,146,0.12);
-    }
-    .card:hover::before { opacity: 1; }
-    .card-top {
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-    .card img {
-      width: 64px;
-      height: 64px;
-      border-radius: 16px;
-      object-fit: cover;
-      background: #2a2433;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-      flex-shrink: 0;
-    }
-    .card h3 {
-      margin: 0 0 4px;
-      font-size: 1.05rem;
-      letter-spacing: -0.02em;
-    }
-    .card .meta {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.35;
-    }
-    .card-desc {
-      position: relative;
-      z-index: 1;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      min-height: 3.6em;
-      flex: 1;
-    }
-    .card-foot {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-top: 4px;
-    }
-    .card-size {
-      font-weight: 700;
-      font-size: 14px;
-      background: linear-gradient(90deg, var(--pink-2), var(--cyan));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-    .card .btn { position: relative; z-index: 2; }
+/* detail */
+.det{display:none;width:min(760px,calc(100% - 28px));margin:20px auto 32px}
+.det.on{display:block}
+.cat.hide{display:none}
+.det-box{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.det-hero{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+.det-hero img{width:76px;height:76px;border-radius:18px;background:#2a2433}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:14px}
+.kv div{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:10px}
+.kv span{display:block;color:var(--muted);font-size:11px}
+.det-desc{color:var(--muted);white-space:pre-wrap;line-height:1.5;margin-bottom:14px}
+.ver{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
 
-    .empty {
-      text-align: center;
-      padding: 48px 16px;
-      color: var(--muted);
-      grid-column: 1 / -1;
-    }
+/* bottom */
+.bottom{width:min(1100px,calc(100% - 28px));margin:36px auto 0}
+.src{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:16px 18px;border-radius:16px;background:rgba(255,47,146,.08);border:1px solid rgba(255,47,146,.2)}
+.src code{flex:1;min-width:160px;padding:9px 11px;border-radius:10px;background:rgba(0,0,0,.3);color:var(--cyan);font-size:12px;overflow-wrap:anywhere}
+.warn{display:flex;gap:12px;margin-top:12px;padding:16px 18px;border-radius:16px;background:rgba(255,90,110,.06);border:1px solid rgba(255,100,120,.18)}
+.warn h3{margin:0 0 4px;font-size:.9rem;color:#ff8fa3}
+.warn p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.5}
 
-    /* Detail modal-ish section */
-    .detail-wrap {
-      display: none;
-      width: min(800px, calc(100% - 32px));
-      margin: 24px auto 40px;
-    }
-    .detail-wrap.open { display: block; }
-    .catalog-wrap.hide { display: none; }
+footer{width:min(1100px,calc(100% - 28px));margin:32px auto 24px;padding-top:20px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.88rem;line-height:1.65}
+footer .bl{color:var(--text);margin:0 0 8px}
+footer strong{font-weight:800}
+footer a{color:var(--pink2);font-weight:500}
+footer a:hover{color:#fff}
+footer .cr{opacity:.55;font-size:.78rem;margin-top:8px}
+.heart{color:#ff6b9a}
+#topBtn{position:fixed;right:18px;bottom:18px;z-index:30;opacity:0;pointer-events:none;transition:.2s}
+#topBtn.show{opacity:1;pointer-events:auto}
 
-    .detail {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 24px;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
-    }
-    .detail-hero {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 18px;
-    }
-    .detail-hero img {
-      width: 80px; height: 80px;
-      border-radius: 20px;
-      background: #2a2433;
-    }
-    .kv {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .kv div {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 12px;
-    }
-    .kv span { display: block; color: var(--muted); font-size: 12px; }
-    .detail-desc {
-      color: var(--muted);
-      white-space: pre-wrap;
-      line-height: 1.5;
-      margin-bottom: 16px;
-    }
-    .ver-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--line);
-      font-size: 14px;
-    }
-
-    /* Bottom blocks */
-    .bottom {
-      width: min(1120px, calc(100% - 32px));
-      margin: 40px auto 0;
-    }
-    .source-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      padding: 18px 20px;
-      border-radius: 18px;
-      background: rgba(255,47,146,0.08);
-      border: 1px solid rgba(255,47,146,0.22);
-    }
-    .source-box code {
-      flex: 1;
-      min-width: 180px;
-      padding: 10px 12px;
-      border-radius: 10px;
-      background: rgba(0,0,0,0.35);
-      color: var(--cyan);
-      font-size: 12px;
-      overflow-wrap: anywhere;
-    }
-    .warning {
-      display: flex;
-      gap: 14px;
-      margin-top: 14px;
-      padding: 18px 20px;
-      border-radius: 18px;
-      background: rgba(255,100,120,0.06);
-      border: 1px solid rgba(255,100,130,0.18);
-    }
-    .warning h3 { margin: 0 0 4px; font-size: 0.95rem; color: #ff8fa3; }
-    .warning p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
-
-    footer.site-footer {
-      width: min(1120px, calc(100% - 32px));
-      margin: 36px auto 28px;
-      padding-top: 24px;
-      border-top: 1px solid var(--line);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      line-height: 1.65;
-    }
-    footer .brand-line { color: var(--text); margin: 0 0 8px; }
-    footer strong { font-weight: 800; }
-    footer a { color: var(--pink-2); font-weight: 500; }
-    footer a:hover { color: #fff; }
-    footer .heart { color: #ff6b9a; }
-    footer .credit { opacity: 0.55; font-size: 0.8rem; margin-top: 10px; }
-
-    @media (max-width: 640px) {
-      .hero { padding: 32px 20px; margin-top: 16px; }
-      .nav .hide-sm { display: none; }
-      .grid { grid-template-columns: 1fr; }
-    }
-  </style>
+@media(max-width:640px){
+  .hero{padding:28px 18px;margin-top:12px}
+  .nav .hs{display:none}
+  .grid{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-  <div class="depth" aria-hidden="true">
-    <div class="blob blob-a" data-speed="0.15"></div>
-    <div class="blob blob-b" data-speed="0.25"></div>
-    <div class="blob blob-c" data-speed="0.1"></div>
+<div class="depth" aria-hidden="true">
+  <div class="blob blob-a" data-s="0.12"></div>
+  <div class="blob blob-b" data-s="0.22"></div>
+  <div class="blob blob-c" data-s="0.08"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="page">
+<header class="header" id="hdr">
+  <div class="header-in">
+    <a class="logo" href="#top">
+      <div class="logo-m">G</div>
+      <div>GeraKStore<small>IPA · GBox</small></div>
+    </a>
+    <nav class="nav">
+      <a class="hs" href="#catalog">Каталог</a>
+      <a class="hs" href="#source">Source</a>
+      <button type="button" class="btn btn-p btn-s" id="c1">＋ Source</button>
+    </nav>
   </div>
+</header>
 
-  <div class="page">
-    <header class="header" id="header">
-      <div class="header-inner">
-        <a class="logo" href="#">
-          <div class="logo-mark">G</div>
-          <div>
-            GeraKStore
-            <span>IPA каталог для GBox</span>
-          </div>
-        </a>
-        <nav class="nav">
-          <a href="#catalog" class="hide-sm">Каталог</a>
-          <a href="#source" class="hide-sm">Source</a>
-          <button type="button" class="btn btn-primary btn-sm" id="btnCopyHeader">＋ Source</button>
-        </nav>
-      </div>
-    </header>
-
-    <section class="hero reveal" id="top">
-      <div class="hero-content">
-        <div class="hero-badge">● SELF_SIGN · GBox</div>
-        <h1>Русский каталог IPA<br>для GBox</h1>
-        <p>
-          Витрина приложений GeraKStore: поиск, категории, размер и установка
-          через свой source. by <strong style="color:var(--text)">ГЕРЫЧ</strong>
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#catalog">Смотреть приложения</a>
-          <button type="button" class="btn btn-ghost" id="btnCopyHero">Копировать Source</button>
-        </div>
-      </div>
-    </section>
-
-    <div class="catalog-wrap" id="catalogWrap">
-      <section class="section" id="catalog">
-        <div class="section-head reveal">
-          <div>
-            <h2>Приложения</h2>
-            <p id="subtitle">Загрузка…</p>
-          </div>
-        </div>
-
-        <div class="toolbar reveal reveal-delay-1">
-          <div class="search">
-            <span>⌕</span>
-            <input id="search" type="search" placeholder="Поиск по названию…" autocomplete="off" />
-          </div>
-          <select class="sort" id="sort">
-            <option value="name">По имени</option>
-            <option value="size">По размеру</option>
-            <option value="version">По версии</option>
-          </select>
-        </div>
-
-        <div class="chips reveal reveal-delay-2" id="chips"></div>
-        <p class="result-line" id="resultLine"></p>
-        <div class="grid" id="grid"></div>
-      </section>
+<section class="hero rv" id="top">
+  <div class="hero-in">
+    <div class="badge">● SELF_SIGN · GBox</div>
+    <h1>Русский каталог IPA<br>для GBox</h1>
+    <p>Витрина GeraKStore: поиск, категории, размер. by <strong style="color:var(--text)">ГЕРЫЧ</strong></p>
+    <div class="hero-acts">
+      <a class="btn btn-p" href="#catalog">Смотреть приложения</a>
+      <button type="button" class="btn btn-g" id="c2">Копировать Source</button>
     </div>
-
-    <div class="detail-wrap" id="detailWrap">
-      <div class="detail reveal">
-        <button type="button" class="btn btn-ghost btn-sm" id="btnBack" style="margin-bottom:14px">← Назад к каталогу</button>
-        <div class="detail-hero" id="detailHero"></div>
-        <div class="kv" id="detailKv"></div>
-        <div class="detail-desc" id="detailDesc"></div>
-        <h3 style="margin:0 0 8px;font-size:15px">Версии</h3>
-        <div id="detailVersions"></div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
-          <a class="btn btn-primary" id="btnDownload" href="#" target="_blank" rel="noopener">Скачать IPA</a>
-          <button type="button" class="btn btn-ghost" id="btnCopyDetail">Копировать Source</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="bottom reveal" id="source">
-      <div class="source-box">
-        <span style="color:var(--muted)">Source для GBox:</span>
-        <code>https://gkuhtov.github.io/GeraStore/repo.json</code>
-        <button type="button" class="btn btn-ghost btn-sm" id="btnCopyBottom">Копировать</button>
-      </div>
-      <div class="warning">
-        <div>⚠️</div>
-        <div>
-          <h3>Важно</h3>
-          <p>
-            Все приложения требуют самоподписи (SELF_SIGN). Использование неофициальных IPA
-            может нарушать правила App Store и нести риски. Автор не несёт ответственности.
-            Используйте на свой страх и риск.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer class="site-footer reveal">
-      <p class="brand-line">GeraKStore · by <strong>ГЕРЫЧ</strong></p>
-      <p>
-        <a href="https://github.com/gkuhtov/GeraStore" target="_blank" rel="noopener">GitHub</a>
-        &nbsp;·&nbsp;
-        <a href="https://t.me/madebygood" target="_blank" rel="noopener">Telegram</a>
-      </p>
-      <p class="credit">Сделано с <span class="heart">♥</span> для сообщества GBox</p>
-    </footer>
   </div>
+</section>
 
-  <script>
-(function () {
-  var SOURCE = "https://gkuhtov.github.io/GeraStore/repo.json";
-  var REPO_URLS = [
-    "repo.json",
-    SOURCE,
-    "https://raw.githubusercontent.com/gkuhtov/GeraStore/main/repo.json"
-  ];
-  var ICON_FALLBACK =
-    "data:image/svg+xml," +
-    encodeURIComponent(
-      '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect fill="#2a2433" width="64" height="64" rx="16"/><text x="32" y="38" text-anchor="middle" fill="#a39aa8" font-size="14" font-family="sans-serif">App</text></svg>'
-    );
+<div class="cat" id="catW">
+<section class="wrap" id="catalog">
+  <div class="sec-h rv">
+    <div>
+      <h2>Приложения</h2>
+      <p id="sub">Загрузка…</p>
+    </div>
+  </div>
+  <div class="bar rv d1">
+    <div class="search"><span>⌕</span><input id="q" type="search" placeholder="Поиск…" autocomplete="off"/></div>
+    <select class="sort" id="sort">
+      <option value="name">По имени</option>
+      <option value="size">По размеру</option>
+      <option value="version">По версии</option>
+    </select>
+  </div>
+  <div class="chips rv d2" id="chips"></div>
+  <p class="res" id="res"></p>
+  <div class="grid" id="grid"></div>
+</section>
+</div>
 
-  var allApps = [];
-  var activeCat = "Все";
-  var query = "";
-  var sortBy = "name";
+<div class="det" id="detW">
+  <div class="det-box rv">
+    <button type="button" class="btn btn-g btn-s" id="back" style="margin-bottom:12px">← Назад</button>
+    <div class="det-hero" id="dHero"></div>
+    <div class="kv" id="dKv"></div>
+    <div class="det-desc" id="dDesc"></div>
+    <h3 style="margin:0 0 6px;font-size:14px">Версии</h3>
+    <div id="dVer"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+      <a class="btn btn-p" id="dl" href="#" target="_blank" rel="noopener">Скачать IPA</a>
+      <button type="button" class="btn btn-g" id="c3">Копировать Source</button>
+    </div>
+  </div>
+</div>
 
-  function $(id) { return document.getElementById(id); }
+<div class="bottom rv" id="source">
+  <div class="src">
+    <span style="color:var(--muted)">Source для GBox:</span>
+    <code>https://gkuhtov.github.io/GeraStore/repo.json</code>
+    <button type="button" class="btn btn-g btn-s" id="c4">Копировать</button>
+  </div>
+  <div class="warn">
+    <div>⚠️</div>
+    <div>
+      <h3>Важно</h3>
+      <p>Все приложения требуют самоподписи (SELF_SIGN). Неофициальные IPA могут нарушать правила App Store. Автор не несёт ответственности. Используйте на свой страх и риск.</p>
+    </div>
+  </div>
+</div>
 
-  function formatSize(bytes) {
-    var n = Number(bytes) || 0;
-    if (n <= 0) return "—";
-    var mb = n / (1024 * 1024);
-    return mb >= 100 ? Math.round(mb) + " МБ" : mb.toFixed(1) + " МБ";
-  }
+<footer class="rv">
+  <p class="bl">GeraKStore · by <strong>ГЕРЫЧ</strong></p>
+  <p>
+    <a href="https://github.com/gkuhtov/GeraStore" target="_blank" rel="noopener">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://t.me/madebygood" target="_blank" rel="noopener">Telegram</a>
+  </p>
+  <p class="cr">Сделано с <span class="heart">♥</span> для сообщества GBox</p>
+</footer>
+</div>
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
-  }
+<button type="button" class="btn btn-p btn-s" id="topBtn" aria-label="Наверх">↑</button>
 
-  function copySource() {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(SOURCE).then(function () {
-        alert("Source скопирован:\\n" + SOURCE);
-      }).catch(function () {
-        prompt("Скопируйте Source:", SOURCE);
-      });
-    } else prompt("Скопируйте Source:", SOURCE);
-  }
+<script>
+(function(){
+var SRC="https://gkuhtov.github.io/GeraStore/repo.json";
+var URLS=["repo.json",SRC,"https://raw.githubusercontent.com/gkuhtov/GeraStore/main/repo.json"];
+var FB="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect fill="#2a2433" width="64" height="64" rx="16"/><text x="32" y="38" text-anchor="middle" fill="#9e96a6" font-size="13" font-family="sans-serif">App</text></svg>');
+var apps=[], cat="Все", q="", sort="name";
+function $(id){return document.getElementById(id)}
+function sz(b){b=+b||0;if(b<=0)return "—";var m=b/1048576;return m>=100?Math.round(m)+" МБ":m.toFixed(1)+" МБ"}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function copy(){var t=SRC;(navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(t):Promise.reject()).then(function(){alert("Source скопирован:\n"+t)}).catch(function(){prompt("Source:",t)})}
+["c1","c2","c3","c4"].forEach(function(id){var e=$(id);if(e)e.onclick=copy});
+$("back").onclick=function(){$("detW").classList.remove("on");$("catW").classList.remove("hide");window.scrollTo({top:$("catalog").offsetTop-70,behavior:"smooth"})};
+$("q").oninput=function(){q=$("q").value;render()};
+$("sort").onchange=function(){sort=$("sort").value;render()};
+$("topBtn").onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};
 
-  ["btnCopyHeader", "btnCopyHero", "btnCopyBottom", "btnCopyDetail"].forEach(function (id) {
-    var el = $(id);
-    if (el) el.onclick = copySource;
+/* parallax + header + top btn */
+var blobs=document.querySelectorAll(".blob"), tick=false;
+function onScroll(){
+  if(tick)return;tick=true;
+  requestAnimationFrame(function(){
+    var y=window.scrollY||0;
+    blobs.forEach(function(b){b.style.transform="translate3d(0,"+(y*parseFloat(b.dataset.s||.15))+"px,0)"});
+    $("hdr").classList.toggle("on",y>10);
+    $("topBtn").classList.toggle("show",y>400);
+    tick=false;
   });
+}
+window.addEventListener("scroll",onScroll,{passive:true});onScroll();
 
-  $("btnBack").onclick = function () {
-    $("detailWrap").classList.remove("open");
-    $("catalogWrap").classList.remove("hide");
-    window.scrollTo({ top: $("catalog").offsetTop - 80, behavior: "smooth" });
-  };
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.1,rootMargin:"0px 0px -30px 0px"});
+function obs(){document.querySelectorAll(".rv:not(.in)").forEach(function(el){io.observe(el)})}
 
-  $("search").addEventListener("input", function () {
-    query = $("search").value;
-    render();
+function filtered(){
+  var list=apps.filter(function(a){
+    var ok=cat==="Все"||a.category===cat;
+    var qq=q.trim().toLowerCase();
+    return ok&&(!qq||a.name.toLowerCase().indexOf(qq)>=0||(a.bundleId||"").toLowerCase().indexOf(qq)>=0||(a.description||"").toLowerCase().indexOf(qq)>=0);
   });
-  $("sort").addEventListener("change", function () {
-    sortBy = $("sort").value;
-    render();
+  list=list.slice().sort(function(a,b){
+    if(sort==="size")return(b.size||0)-(a.size||0);
+    if(sort==="version")return String(b.version).localeCompare(String(a.version),undefined,{numeric:true});
+    return a.name.localeCompare(b.name,"ru");
   });
+  return list;
+}
 
-  /* Parallax blobs */
-  var blobs = document.querySelectorAll(".blob");
-  var ticking = false;
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(function () {
-      var y = window.scrollY || 0;
-      blobs.forEach(function (b) {
-        var sp = parseFloat(b.getAttribute("data-speed") || "0.2");
-        b.style.transform = "translate3d(0," + y * sp + "px,0)";
-      });
-      $("header").classList.toggle("scrolled", y > 12);
-      ticking = false;
-    });
+function chips(){
+  var u={};apps.forEach(function(a){if(a.category)u[a.category]=1});
+  var list=["Все"].concat(Object.keys(u).sort(function(a,b){return a.localeCompare(b,"ru")}));
+  $("chips").innerHTML=list.map(function(c){return '<button type="button" class="chip'+(c===cat?" on":"")+'" data-c="'+esc(c)+'">'+esc(c)+"</button>"}).join("");
+  $("chips").querySelectorAll(".chip").forEach(function(b){b.onclick=function(){cat=b.dataset.c;render()}});
+}
+
+function show(a){
+  $("catW").classList.add("hide");$("detW").classList.add("on");
+  $("dHero").innerHTML='<img src="'+esc(a.icon||FB)+'" alt="" onerror="this.onerror=null;this.src=\''+FB+'\'"/><div><h2 style="margin:0 0 4px">'+esc(a.name)+'</h2><div style="color:var(--muted)">v'+esc(a.version)+" · "+esc(a.category)+"</div></div>";
+  $("dKv").innerHTML=[["Bundle ID",a.bundleId||"—"],["Версия",a.version],["Размер",a.sizeText],["Категория",a.category],["Разработчик",a.developer||"—"]].map(function(p){return "<div><span>"+p[0]+"</span><strong>"+esc(String(p[1]))+"</strong></div>"}).join("");
+  $("dDesc").textContent=a.description||"Описание отсутствует";
+  var v=a.versions||[];
+  $("dVer").innerHTML=v.length?v.map(function(x){return '<div class="ver"><span>v'+esc(x.version||"—")+'</span><span style="color:var(--muted)">'+sz(x.size)+"</span></div>"}).join(""):'<p style="color:var(--muted)">Версии не указаны</p>';
+  var dl=$("dl");
+  if(a.downloadURL){dl.href=a.downloadURL;dl.style.opacity="1";dl.style.pointerEvents="auto"}
+  else{dl.href="#";dl.style.opacity=".5";dl.style.pointerEvents="none"}
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function grid(){
+  var list=filtered();
+  $("res").textContent=(q||cat!=="Все")?("Показано "+list.length+" из "+apps.length):(apps.length+" приложений");
+  if(!list.length){$("grid").innerHTML='<div class="empty">Ничего не найдено</div>';return}
+  $("grid").innerHTML=list.map(function(a,i){
+    var d=(a.description||"").replace(/\s+/g," ").trim();if(d.length>110)d=d.slice(0,107)+"…";
+    return '<article class="card rv" data-i="'+i+'" style="transition-delay:'+Math.min(i,10)*.04+'s"><div class="card-top"><img src="'+esc(a.icon||FB)+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=\''+FB+'\'"/><div><h3>'+esc(a.name)+'</h3><div class="meta">'+esc(a.category)+" · v"+esc(a.version)+'</div></div></div><div class="card-desc">'+esc(d||"Описание отсутствует")+'</div><div class="card-foot"><span class="size">'+esc(a.sizeText)+"</span>"+(a.downloadURL?'<a class="btn btn-p btn-s" href="'+esc(a.downloadURL)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">Скачать</a>':"")+"</div></article>";
+  }).join("");
+  $("grid").querySelectorAll(".card").forEach(function(c){c.onclick=function(){show(list[+c.dataset.i])}});
+  obs();
+  requestAnimationFrame(function(){$("grid").querySelectorAll(".rv").forEach(function(el){if(el.getBoundingClientRect().top<innerHeight-20)el.classList.add("in")})});
+}
+
+function render(){chips();grid()}
+
+function norm(r,cats){
+  var vs=r.versions||[], L=vs.length?vs[vs.length-1]:{};
+  var c=r.category||"";if(!c&&typeof r.appCateIndex==="number"&&cats[r.appCateIndex])c=cats[r.appCateIndex];if(!c)c="Другое";
+  var s=r.size||r.appSize||r.fileSize||L.size||0;
+  return{name:String(r.appName||r.name||"Без названия").trim(),bundleId:r.bundleIdentifier||"",version:r.appVersion||r.version||L.version||"—",size:s,sizeText:sz(s),icon:r.appImage||r.iconURL||"",description:r.appDescription||r.localizedDescription||L.localizedDescription||"",developer:r.developerName||"",downloadURL:r.appPackage||r.downloadURL||L.downloadURL||"",category:c,versions:vs};
+}
+
+async function load(){
+  var data=null,err=null;
+  for(var i=0;i<URLS.length;i++){
+    try{
+      var res=await fetch(URLS[i]+(URLS[i].indexOf("?")>=0?"&":"?")+"t="+Date.now(),{cache:"no-store"});
+      if(!res.ok)throw new Error(URLS[i]+" → "+res.status);
+      data=await res.json();break;
+    }catch(e){err=e}
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  /* Reveal on scroll */
-  var io = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) e.target.classList.add("in");
-      });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-  );
-  function observeReveals() {
-    document.querySelectorAll(".reveal:not(.in)").forEach(function (el) {
-      io.observe(el);
-    });
-  }
-
-  function filtered() {
-    var list = allApps.filter(function (app) {
-      var byCat = activeCat === "Все" || app.category === activeCat;
-      var q = query.trim().toLowerCase();
-      var byQ =
-        !q ||
-        app.name.toLowerCase().indexOf(q) !== -1 ||
-        (app.bundleId || "").toLowerCase().indexOf(q) !== -1 ||
-        (app.description || "").toLowerCase().indexOf(q) !== -1;
-      return byCat && byQ;
-    });
-    list = list.slice().sort(function (a, b) {
-      if (sortBy === "size") return (b.size || 0) - (a.size || 0);
-      if (sortBy === "version")
-        return String(b.version).localeCompare(String(a.version), undefined, { numeric: true });
-      return a.name.localeCompare(b.name, "ru");
-    });
-    return list;
-  }
-
-  function renderChips() {
-    var used = {};
-    allApps.forEach(function (a) {
-      if (a.category) used[a.category] = true;
-    });
-    var list = ["Все"].concat(
-      Object.keys(used).sort(function (a, b) {
-        return a.localeCompare(b, "ru");
-      })
-    );
-    $("chips").innerHTML = list
-      .map(function (c) {
-        return (
-          '<button type="button" class="chip' +
-          (c === activeCat ? " active" : "") +
-          '" data-cat="' +
-          escapeHtml(c) +
-          '">' +
-          escapeHtml(c) +
-          "</button>"
-        );
-      })
-      .join("");
-    $("chips").querySelectorAll(".chip").forEach(function (btn) {
-      btn.onclick = function () {
-        activeCat = btn.getAttribute("data-cat");
-        render();
-      };
-    });
-  }
-
-  function showDetail(app) {
-    $("catalogWrap").classList.add("hide");
-    $("detailWrap").classList.add("open");
-    $("detailHero").innerHTML =
-      '<img src="' +
-      escapeHtml(app.icon || ICON_FALLBACK) +
-      '" alt="" onerror="this.onerror=null;this.src=\'' +
-      ICON_FALLBACK +
-      '\'" />' +
-      "<div><h2 style=\"margin:0 0 4px\">" +
-      escapeHtml(app.name) +
-      "</h2>" +
-      '<div style="color:var(--muted)">v' +
-      escapeHtml(app.version) +
-      " · " +
-      escapeHtml(app.category) +
-      "</div></div>";
-
-    $("detailKv").innerHTML = [
-      ["Bundle ID", app.bundleId || "—"],
-      ["Версия", app.version],
-      ["Размер", app.sizeText],
-      ["Категория", app.category],
-      ["Разработчик", app.developer || "—"]
-    ]
-      .map(function (p) {
-        return (
-          "<div><span>" +
-          p[0] +
-          "</span><strong>" +
-          escapeHtml(String(p[1])) +
-          "</strong></div>"
-        );
-      })
-      .join("");
-
-    $("detailDesc").textContent = app.description || "Описание отсутствует";
-
-    var vers = app.versions || [];
-    $("detailVersions").innerHTML = vers.length
-      ? vers
-          .map(function (v) {
-            return (
-              '<div class="ver-row"><span>v' +
-              escapeHtml(v.version || "—") +
-              '</span><span style="color:var(--muted)">' +
-              formatSize(v.size) +
-              "</span></div>"
-            );
-          })
-          .join("")
-      : '<p style="color:var(--muted)">Версии не указаны</p>';
-
-    var dl = $("btnDownload");
-    if (app.downloadURL) {
-      dl.href = app.downloadURL;
-      dl.style.opacity = "1";
-      dl.style.pointerEvents = "auto";
-    } else {
-      dl.href = "#";
-      dl.style.opacity = "0.5";
-      dl.style.pointerEvents = "none";
-    }
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  function renderGrid() {
-    var apps = filtered();
-    $("resultLine").textContent =
-      query || activeCat !== "Все"
-        ? "Показано " + apps.length + " из " + allApps.length
-        : allApps.length + " приложений";
-
-    if (!apps.length) {
-      $("grid").innerHTML = '<div class="empty">Ничего не найдено</div>';
-      return;
-    }
-
-    $("grid").innerHTML = apps
-      .map(function (app, i) {
-        var desc = (app.description || "").replace(/\s+/g, " ").trim();
-        if (desc.length > 120) desc = desc.slice(0, 117) + "…";
-        return (
-          '<article class="card reveal" data-i="' +
-          i +
-          '" style="transition-delay:' +
-          Math.min(i, 8) * 0.05 +
-          's">' +
-          '<div class="card-top">' +
-          '<img src="' +
-          escapeHtml(app.icon || ICON_FALLBACK) +
-          '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' +
-          ICON_FALLBACK +
-          '\'" />' +
-          "<div><h3>" +
-          escapeHtml(app.name) +
-          '</h3><div class="meta">' +
-          escapeHtml(app.category) +
-          " · v" +
-          escapeHtml(app.version) +
-          "</div></div></div>" +
-          '<div class="card-desc">' +
-          escapeHtml(desc || "Описание отсутствует") +
-          "</div>" +
-          '<div class="card-foot">' +
-          '<span class="card-size">' +
-          escapeHtml(app.sizeText) +
-          "</span>" +
-          (app.downloadURL
-            ? '<a class="btn btn-primary btn-sm" href="' +
-              escapeHtml(app.downloadURL) +
-              '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Скачать</a>'
-            : "") +
-          "</div></article>"
-        );
-      })
-      .join("");
-
-    var list = apps;
-    $("grid").querySelectorAll(".card").forEach(function (card) {
-      card.onclick = function () {
-        showDetail(list[Number(card.getAttribute("data-i"))]);
-      };
-    });
-    observeReveals();
-    // trigger visible cards
-    requestAnimationFrame(function () {
-      $("grid").querySelectorAll(".reveal").forEach(function (el) {
-        var r = el.getBoundingClientRect();
-        if (r.top < window.innerHeight - 40) el.classList.add("in");
-      });
-    });
-  }
-
-  function render() {
-    renderChips();
-    renderGrid();
-  }
-
-  function normalize(raw, cats) {
-    var versions = raw.versions || [];
-    var latest = versions.length ? versions[versions.length - 1] : {};
-    var category = raw.category || "";
-    if (!category && typeof raw.appCateIndex === "number" && cats[raw.appCateIndex]) {
-      category = cats[raw.appCateIndex];
-    }
-    if (!category) category = "Другое";
-    var size = raw.size || raw.appSize || raw.fileSize || latest.size || 0;
-    return {
-      name: String(raw.appName || raw.name || "Без названия").trim(),
-      bundleId: raw.bundleIdentifier || "",
-      version: raw.appVersion || raw.version || latest.version || "—",
-      size: size,
-      sizeText: formatSize(size),
-      icon: raw.appImage || raw.iconURL || "",
-      description:
-        raw.appDescription || raw.localizedDescription || latest.localizedDescription || "",
-      developer: raw.developerName || "",
-      downloadURL: raw.appPackage || raw.downloadURL || latest.downloadURL || "",
-      category: category,
-      versions: versions
-    };
-  }
-
-  async function loadRepo() {
-    var data = null;
-    var lastErr = null;
-    for (var i = 0; i < REPO_URLS.length; i++) {
-      var url = REPO_URLS[i];
-      try {
-        var res = await fetch(url + (url.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now(), {
-          cache: "no-store"
-        });
-        if (!res.ok) throw new Error(url + " → " + res.status);
-        data = await res.json();
-        break;
-      } catch (e) {
-        lastErr = e;
-      }
-    }
-    if (!data) {
-      $("subtitle").textContent = "Ошибка загрузки каталога";
-      $("grid").innerHTML =
-        '<div class="empty">' +
-        escapeHtml(String(lastErr && lastErr.message ? lastErr.message : lastErr)) +
-        "</div>";
-      return;
-    }
-    var cats = data.appCategories || [];
-    var rawList = data.appRepositories || data.apps || [];
-    allApps = rawList.map(function (a) {
-      return normalize(a, cats);
-    });
-    $("subtitle").textContent = allApps.length + " приложений в витрине";
-    render();
-    observeReveals();
-  }
-
-  observeReveals();
-  loadRepo();
+  if(!data){$("sub").textContent="Ошибка загрузки";$("grid").innerHTML='<div class="empty">'+esc(String(err&&err.message||err))+"</div>";return}
+  var cats=data.appCategories||[];
+  apps=(data.appRepositories||data.apps||[]).map(function(a){return norm(a,cats)});
+  $("sub").textContent=apps.length+" приложений в витрине";
+  render();obs();
+}
+obs();load();
 })();
-  </script>
+</script>
 </body>
 </html>
