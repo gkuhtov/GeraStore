@@ -11,6 +11,7 @@
       "name": "Board Adventure",
       "bundleIdentifier": "com.moonactive.cmboard",
       "developerName": "ГЕРЫЧ",
+      "category": "Игры",
       "version": "3.5.2590",
       "versionDate": "2026-08-04",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
@@ -26,13 +27,13 @@
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды."
         }
       ],
-      "subtitle": "САБ",
-      "appCateIndex": 0
+      "subtitle": "САБ"
     },
     {
       "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "ГЕРЫЧ",
+      "category": "Навигация",
       "version": "9.43",
       "versionDate": "2026-08-04",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
@@ -47,13 +48,13 @@
           "size": 148911591,
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги."
         }
-      ],
-      "appCateIndex": 1
+      ]
     },
     {
       "name": "Bridge Constr+",
       "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
       "developerName": "ГЕРЫЧ",
+      "category": "Игры",
       "version": "14.0.873",
       "versionDate": "2026-08-06",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
@@ -68,13 +69,13 @@
           "size": 119786529,
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин."
         }
-      ],
-      "appCateIndex": 0
+      ]
     },
     {
       "name": "RuTube",
       "bundleIdentifier": "com.slicingdice.game",
       "developerName": "ГЕРЫЧ",
+      "category": "Развлечения",
       "version": "1.1.0",
       "versionDate": "2026-08-10",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
@@ -89,34 +90,13 @@
           "size": 35875020,
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме."
         }
-      ],
-      "appCateIndex": 2
-    },
-    {
-      "name": "Online",
-      "bundleIdentifier": "com.inv.gen.",
-      "developerName": "ГЕРЫЧ",
-      "version": "17.6.1",
-      "versionDate": "2026-08-19",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
-      "size": 303631261,
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.inv.gen.png",
-      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
-      "versions": [
-        {
-          "version": "17.6.1",
-          "date": "2026-08-19",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.inv.gen.-17.6.1/default.ipa",
-          "size": 303631261,
-          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона."
-        }
-      ],
-      "appCateIndex": 3
+      ]
     },
     {
       "name": "Сириус",
       "bundleIdentifier": "com.sm.FlowTime",
       "developerName": "ГЕРЫЧ",
+      "category": "Финансы",
       "version": "2.0.1",
       "versionDate": "2026-08-19",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
@@ -131,14 +111,7 @@
           "size": 379282059,
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона."
         }
-      ],
-      "appCateIndex": 3
+      ]
     }
-  ],
-  "appCategories": [
-    "Игры",
-    "Навигация",
-    "Развлечения",
-    "Финансы"
   ]
 }
