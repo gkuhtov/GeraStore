@@ -122,6 +122,29 @@
           "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором."
         }
       ]
+    },
+    {
+      "name": "Board Adventure",
+      "bundleIdentifier": "com.moonactive.cmboard",
+      "developerName": "ГЕРЫЧ",
+      "category": "Игры",
+      "version": "3.5.2590",
+      "versionDate": "2026-08-23",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+      "size": 127183823,
+      "minIOSVersion": "10.0",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте деревни.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые миры.",
+      "versions": [
+        {
+          "version": "3.5.2590",
+          "date": "2026-08-23",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
+          "size": 127183823,
+          "minIOSVersion": "10.0",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте деревни.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые миры."
+        }
+      ]
     }
   ]
 }
