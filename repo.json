@@ -8,30 +8,6 @@
   "sourceURL": "https://gkuhtov.github.io/GeraStore/repo.json",
   "apps": [
     {
-      "name": "Board Adventure",
-      "bundleIdentifier": "com.moonactive.cmboard",
-      "developerName": "ГЕРЫЧ",
-      "category": "Игры",
-      "version": "3.5.2590",
-      "versionDate": "2026-08-04",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
-      "size": 127183823,
-      "minIOSVersion": "10.0",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
-      "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды.",
-      "versions": [
-        {
-          "version": "3.5.2590",
-          "date": "2026-08-04",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
-          "size": 127183823,
-          "minIOSVersion": "10.0",
-          "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды."
-        }
-      ],
-      "subtitle": "САБ"
-    },
-    {
       "name": "Bridge Constr+",
       "bundleIdentifier": "com.headupgames.bridgeconstructor-arcade",
       "developerName": "ГЕРЫЧ",
