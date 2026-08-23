@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-23T19:57:54+0800",
+  "sourceUpdateTime": "2026-08-23T20:24:40+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-23T19:57:54+0800",
+      "appUpdateTime": "2026-08-23T20:24:40+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -42,6 +42,7 @@
       "developerName": "ГЕРЫЧ",
       "category": "Игры",
       "subtitle": "САБ",
+      "minIOSVersion": "",
       "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "version": "3.5.2590",
@@ -60,6 +61,7 @@
           "fileSize": 127183823,
           "appFileSize": 127183823,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.moonactive.cmboard.plist",
+          "minIOSVersion": "",
           "category": "Игры",
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте свою деревню.\n🩷Исследуйте новые миры и собирайте карты.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые локации. Участвуйте в событиях и собирайте награды.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png"
@@ -69,7 +71,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 13,
-      "appUpdateTime": "2026-08-23T19:57:54+0800",
+      "appUpdateTime": "2026-08-23T20:24:40+0800",
       "versionDate": "2026-08-04",
       "appName": "Radarbot",
       "appVersion": "9.43",
@@ -82,6 +84,7 @@
       "developerName": "ГЕРЫЧ",
       "category": "Навигация",
       "subtitle": "",
+      "minIOSVersion": "",
       "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "version": "9.43",
@@ -100,6 +103,7 @@
           "fileSize": 148911591,
           "appFileSize": 148911591,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist",
+          "minIOSVersion": "",
           "category": "Навигация",
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n\n🚗 Radarbot помогает получать предупреждения о стационарных, мобильных и других камерах контроля, а также об опасных участках дороги.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
@@ -109,7 +113,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-23T19:57:54+0800",
+      "appUpdateTime": "2026-08-23T20:24:40+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
@@ -122,6 +126,7 @@
       "developerName": "ГЕРЫЧ",
       "category": "Игры",
       "subtitle": "",
+      "minIOSVersion": "",
       "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png",
       "version": "14.0.873",
@@ -140,6 +145,7 @@
           "fileSize": 119786529,
           "appFileSize": 119786529,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.headupgames.bridgeconstructor-arcade.plist",
+          "minIOSVersion": "",
           "category": "Игры",
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности⚙️\n\n🩷Полная версия игры.\n🩷Без рекламы.\n\n🌉 Стройте мосты через долины, каналы и реки, выбирайте материалы и проверяйте конструкции под нагрузкой автомобилей, грузовиков и тяжёлых машин.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
@@ -149,7 +155,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-23T19:57:54+0800",
+      "appUpdateTime": "2026-08-23T20:24:40+0800",
       "versionDate": "2026-08-10T13:17:04Z",
       "appName": "RuTube",
       "appVersion": "1.1.0",
@@ -162,6 +168,7 @@
       "developerName": "ГЕРЫЧ",
       "category": "Развлечения",
       "subtitle": "",
+      "minIOSVersion": "",
       "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png",
       "version": "1.1.0",
@@ -180,6 +187,7 @@
           "fileSize": 35875020,
           "appFileSize": 35875020,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.slicingdice.game.plist",
+          "minIOSVersion": "",
           "category": "Развлечения",
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n\n🩷Недоступно в ❌💙AppStore.\n🩷Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png"
@@ -189,7 +197,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-23T19:57:54+0800",
+      "appUpdateTime": "2026-08-23T20:24:40+0800",
       "versionDate": "2026-08-19T12:03:18Z",
       "appName": "Сириус",
       "appVersion": "2.0.1",
@@ -202,6 +210,7 @@
       "developerName": "ГЕРЫЧ",
       "category": "Финансы",
       "subtitle": "",
+      "minIOSVersion": "",
       "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.sm.FlowTime.png",
       "version": "2.0.1",
@@ -220,6 +229,7 @@
           "fileSize": 379282059,
           "appFileSize": 379282059,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.sm.FlowTime.plist",
+          "minIOSVersion": "",
           "category": "Финансы",
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.sm.FlowTime.png"
@@ -229,7 +239,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-23T19:57:54+0800",
+      "appUpdateTime": "2026-08-23T20:24:40+0800",
       "versionDate": "2026-08-23T11:57:54Z",
       "appName": "Online",
       "appVersion": "17.6.1",
@@ -242,6 +252,7 @@
       "developerName": "ГЕРЫЧ",
       "category": "Финансы",
       "subtitle": "сабка",
+      "minIOSVersion": "10.0",
       "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.inv.gen.png",
       "version": "17.6.1",
@@ -260,6 +271,7 @@
           "fileSize": 296656711,
           "appFileSize": 296656711,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.inv.gen.plist",
+          "minIOSVersion": "10.0",
           "category": "Финансы",
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.inv.gen.png"
