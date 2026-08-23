@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-23T20:45:55+0800",
+  "sourceUpdateTime": "2026-08-24T00:25:56+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -29,7 +29,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-23T20:45:55+0800",
+      "appUpdateTime": "2026-08-24T00:25:56+0800",
       "versionDate": "2026-08-04",
       "appName": "Board Adventure",
       "appVersion": "3.5.2590",
@@ -71,7 +71,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 0,
-      "appUpdateTime": "2026-08-23T20:45:55+0800",
+      "appUpdateTime": "2026-08-24T00:25:56+0800",
       "versionDate": "2026-08-06T13:00:26Z",
       "appName": "Bridge Constr+",
       "appVersion": "14.0.873",
@@ -113,7 +113,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 5,
-      "appUpdateTime": "2026-08-23T20:45:55+0800",
+      "appUpdateTime": "2026-08-24T00:25:56+0800",
       "versionDate": "2026-08-10T13:17:04Z",
       "appName": "RuTube",
       "appVersion": "1.1.0",
@@ -155,7 +155,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-23T20:45:55+0800",
+      "appUpdateTime": "2026-08-24T00:25:56+0800",
       "versionDate": "2026-08-19T12:03:18Z",
       "appName": "Сириус",
       "appVersion": "2.0.1",
@@ -197,7 +197,7 @@
     {
       "appType": "SELF_SIGN",
       "appCateIndex": 11,
-      "appUpdateTime": "2026-08-23T20:45:55+0800",
+      "appUpdateTime": "2026-08-24T00:25:56+0800",
       "versionDate": "2026-08-23T11:57:54Z",
       "appName": "Online",
       "appVersion": "17.6.1",
@@ -233,6 +233,48 @@
           "category": "Финансы",
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы и платежи.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата услуг по QR-коду.\n\n🏦 СберБанк позволяет управлять картами и счетами, совершать переводы и оплачивать различные услуги прямо со смартфона.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.inv.gen.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 13,
+      "appUpdateTime": "2026-08-24T00:25:56+0800",
+      "versionDate": "2026-08-23T16:25:56Z",
+      "appName": "Radarbot",
+      "appVersion": "9.43",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist",
+      "appDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
+      "name": "Radarbot",
+      "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
+      "developerName": "ГЕРЫЧ",
+      "category": "Навигация",
+      "subtitle": "",
+      "minIOSVersion": "15.0",
+      "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
+      "version": "9.43",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+      "size": 148911591,
+      "appSize": 148911591,
+      "fileSize": 148911591,
+      "appFileSize": 148911591,
+      "versions": [
+        {
+          "version": "9.43",
+          "date": "2026-08-23T16:25:56Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
+          "size": 148911591,
+          "appSize": 148911591,
+          "fileSize": 148911591,
+          "appFileSize": 148911591,
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist",
+          "minIOSVersion": "",
+          "category": "Навигация",
+          "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
         }
       ]
     }
