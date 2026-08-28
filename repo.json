@@ -215,44 +215,6 @@
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png"
         }
       ]
-    },
-    {
-      "appType": "SELF_SIGN",
-      "appCateIndex": 7,
-      "appUpdateTime": "2026-08-29T00:34:23+0800",
-      "versionDate": "2026-08-28T16:34:23Z",
-      "appName": "Persona",
-      "appVersion": "1.15.38",
-      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.tickettothemoon.video.persona.png",
-      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.tickettothemoon.video.persona-1.15.38/Persona_GeraKStore.ipa",
-      "appDescription": "⚙️Особенности PRO⚙️\n\n🩷Разблокированы платные функции.\n🩷Профессиональные инструменты редактирования.\n🩷Фильтры и эффекты.\n\n📸 Persona Pro позволяет редактировать фотографии, применять эффекты и использовать расширенные инструменты обработки изображений прямо на iPhone.",
-      "name": "Persona",
-      "bundleIdentifier": "com.tickettothemoon.video.persona",
-      "developerName": "ГЕРЫЧ",
-      "subtitle": "",
-      "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Разблокированы платные функции.\n🩷Профессиональные инструменты редактирования.\n🩷Фильтры и эффекты.\n\n📸 Persona Pro позволяет редактировать фотографии, применять эффекты и использовать расширенные инструменты обработки изображений прямо на iPhone.",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.tickettothemoon.video.persona.png",
-      "version": "1.15.38",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.tickettothemoon.video.persona-1.15.38/Persona_GeraKStore.ipa",
-      "size": 174804509,
-      "appSize": 174804509,
-      "fileSize": 174804509,
-      "appFileSize": 174804509,
-      "versions": [
-        {
-          "version": "1.15.38",
-          "date": "2026-08-28T16:34:23Z",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.tickettothemoon.video.persona-1.15.38/Persona_GeraKStore.ipa",
-          "size": 174804509,
-          "appSize": 174804509,
-          "fileSize": 174804509,
-          "appFileSize": 174804509,
-          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.tickettothemoon.video.persona.plist",
-          "category": "Фото и видео",
-          "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Разблокированы платные функции.\n🩷Профессиональные инструменты редактирования.\n🩷Фильтры и эффекты.\n\n📸 Persona Pro позволяет редактировать фотографии, применять эффекты и использовать расширенные инструменты обработки изображений прямо на iPhone.",
-          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.tickettothemoon.video.persona.png"
-        }
-      ]
     }
   ]
 }
