@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-08-29T00:49:31+0800",
+  "sourceUpdateTime": "2026-08-29T13:34:41+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -251,6 +251,44 @@
           "category": "Фото и видео",
           "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Разблокированы платные функции.\n🩷Профессиональные инструменты редактирования.\n🩷Фильтры и эффекты.\n\n📸 Persona Pro позволяет редактировать фотографии, применять эффекты и использовать расширенные инструменты обработки изображений прямо на iPhone.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.tickettothemoon.video.persona.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "appCateIndex": 8,
+      "appUpdateTime": "2026-08-29T13:34:41+0800",
+      "versionDate": "2026-08-29T05:34:41Z",
+      "appName": "GeraKMusic",
+      "appVersion": "777",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
+      "appDescription": "ЭКЗ",
+      "name": "GeraKMusic",
+      "bundleIdentifier": "com.gerakmusic.app",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "ЭКЗ",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png",
+      "version": "777",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
+      "size": 5046195,
+      "appSize": 5046195,
+      "fileSize": 5046195,
+      "appFileSize": 5046195,
+      "versions": [
+        {
+          "version": "777",
+          "date": "2026-08-29T05:34:41Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
+          "size": 5046195,
+          "appSize": 5046195,
+          "fileSize": 5046195,
+          "appFileSize": 5046195,
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerakmusic.app.plist",
+          "category": "Музыка",
+          "localizedDescription": "ЭКЗ",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png"
         }
       ]
     }
