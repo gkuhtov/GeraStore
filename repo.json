@@ -46,26 +46,19 @@
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
       "size": 225675067,
-      "appSize": 225675067,
-      "fileSize": 225675067,
-      "appFileSize": 225675067,
-      "human_file_size": "215.2 MB",
       "versions": [
         {
           "version": "2.0.0",
           "date": "2026-07-30",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
           "size": 225675067,
-          "appSize": 225675067,
-          "fileSize": 225675067,
-          "appFileSize": 225675067,
-          "human_file_size": "215.2 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist",
           "category": "Финансы",
           "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist"
     },
     {
       "appType": "SELF_SIGN",
@@ -87,26 +80,19 @@
       "version": "3.5.2590",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
       "size": 127183823,
-      "appSize": 127183823,
-      "fileSize": 127183823,
-      "appFileSize": 127183823,
-      "human_file_size": "121.3 MB",
       "versions": [
         {
           "version": "3.5.2590",
           "date": "2026-08-04",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
           "size": 127183823,
-          "appSize": 127183823,
-          "fileSize": 127183823,
-          "appFileSize": 127183823,
-          "human_file_size": "121.3 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.moonactive.cmboard.plist",
           "category": "Игры",
           "localizedDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.moonactive.cmboard.plist"
     },
     {
       "appType": "SELF_SIGN",
@@ -128,26 +114,19 @@
       "version": "9.43",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
       "size": 148911591,
-      "appSize": 148911591,
-      "fileSize": 148911591,
-      "appFileSize": 148911591,
-      "human_file_size": "142.0 MB",
       "versions": [
         {
           "version": "9.43",
           "date": "2026-08-04",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.iteration-mobile.radarbot-free-ww-9.43/Radarbot.ipa",
           "size": 148911591,
-          "appSize": 148911591,
-          "fileSize": 148911591,
-          "appFileSize": 148911591,
-          "human_file_size": "142.0 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist",
           "category": "Навигация",
           "localizedDescription": "Ваш помошник в дороге. Предупреждает о радарах, камерах и опасных участках дороги, помогая контролировать скорость.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist"
     },
     {
       "appType": "SELF_SIGN",
@@ -169,26 +148,19 @@
       "version": "14.0.873",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
       "size": 119786529,
-      "appSize": 119786529,
-      "fileSize": 119786529,
-      "appFileSize": 119786529,
-      "human_file_size": "114.2 MB",
       "versions": [
         {
           "version": "14.0.873",
           "date": "2026-08-06T13:00:26Z",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.headupgames.bridgeconstructor-arcade-14.0.873/Bridge.Constr.ipa",
           "size": 119786529,
-          "appSize": 119786529,
-          "fileSize": 119786529,
-          "appFileSize": 119786529,
-          "human_file_size": "114.2 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.headupgames.bridgeconstructor-arcade.plist",
           "category": "Игры",
           "localizedDescription": "Стройте мосты, проверйте свои инженерные навыки и создавайте надежные конструкции. Решайте говололомки с физикой и проходите десятки уровней.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.headupgames.bridgeconstructor-arcade.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.headupgames.bridgeconstructor-arcade.plist"
     },
     {
       "appType": "SELF_SIGN",
@@ -210,26 +182,19 @@
       "version": "1.1.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
       "size": 35875020,
-      "appSize": 35875020,
-      "fileSize": 35875020,
-      "appFileSize": 35875020,
-      "human_file_size": "34.2 MB",
       "versions": [
         {
           "version": "1.1.0",
           "date": "2026-08-10T13:17:04Z",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa",
           "size": 35875020,
-          "appSize": 35875020,
-          "fileSize": 35875020,
-          "appFileSize": 35875020,
-          "human_file_size": "34.2 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.slicingdice.game.plist",
           "category": "Развлечения",
           "localizedDescription": "⚡️Новейшая версия⚡️\n\n⚙️Особенности мода⚙️\n💚Недоступно в ❌💙AppStore.\n💚Удалена реклама.\n\n😰Новое приложение RuTube под видом игры. Активация приложения по ссылке удалено, приложение сразу работает в штатном режиме.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.slicingdice.game.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.slicingdice.game.plist"
     },
     {
       "appType": "SELF_SIGN",
@@ -251,26 +216,19 @@
       "version": "1.15.38",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.tickettothemoon.video.persona-1.15.38/Persona_GeraKStore.ipa",
       "size": 174804509,
-      "appSize": 174804509,
-      "fileSize": 174804509,
-      "appFileSize": 174804509,
-      "human_file_size": "166.7 MB",
       "versions": [
         {
           "version": "1.15.38",
           "date": "2026-08-28T16:49:31Z",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.tickettothemoon.video.persona-1.15.38/Persona_GeraKStore.ipa",
           "size": 174804509,
-          "appSize": 174804509,
-          "fileSize": 174804509,
-          "appFileSize": 174804509,
-          "human_file_size": "166.7 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.tickettothemoon.video.persona.plist",
           "category": "Фото и видео",
           "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Разблокированы платные функции.\n🩷Профессиональные инструменты редактирования.\n🩷Фильтры и эффекты.\n\n📸 Persona Pro позволяет редактировать фотографии, применять эффекты и использовать расширенные инструменты обработки изображений прямо на iPhone.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.tickettothemoon.video.persona.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.tickettothemoon.video.persona.plist"
     },
     {
       "appType": "SELF_SIGN",
@@ -292,26 +250,19 @@
       "version": "777",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
       "size": 5046195,
-      "appSize": 5046195,
-      "fileSize": 5046195,
-      "appFileSize": 5046195,
-      "human_file_size": "4.8 MB",
       "versions": [
         {
           "version": "777",
           "date": "2026-08-29T05:34:41Z",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
           "size": 5046195,
-          "appSize": 5046195,
-          "fileSize": 5046195,
-          "appFileSize": 5046195,
-          "human_file_size": "4.8 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerakmusic.app.plist",
           "category": "Музыка",
           "localizedDescription": "ЭКЗ",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png"
         }
-      ]
+      ],
+      "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerakmusic.app.plist"
     }
   ]
 }
