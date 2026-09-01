@@ -45,13 +45,13 @@
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "size": 225675067,
+      "size": 225693759,
       "versions": [
         {
           "version": "2.0.0",
           "date": "2026-07-30",
           "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-          "size": 225675067,
+          "size": 225693759,
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist",
           "category": "Финансы",
           "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
