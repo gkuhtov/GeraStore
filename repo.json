@@ -323,12 +323,12 @@
       "appVersion": "9.43",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/radarbot-9.43/Radarbot.ipa",
-      "appDescription": "⚙️Особенности PRO⚙️\n\n•Без рекламы.\n•Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
+      "appDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
       "name": "Radarbot",
       "bundleIdentifier": "com.iteration-mobile.radarbot-free-ww",
       "developerName": "GK",
       "subtitle": "PRO-версия приложения для предупреждения о камерах и опасностях на дороге.",
-      "localizedDescription": "⚙️Особенности PRO⚙️\n\n•Без рекламы.\n•Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
+      "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.iteration-mobile.radarbot-free-ww.png",
       "version": "9.43",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/radarbot-9.43/Radarbot.ipa",
@@ -349,7 +349,7 @@
           "human_file_size": "142.0 MB",
           "appPlist": "https://gkuht.github.io/GeraStore/plist/com.iteration-mobile.radarbot-free-ww.plist",
           "category": "Навигация",
-          "localizedDescription": "⚙️Особенности PRO⚙️\n\n•Без рекламы.\n•Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
+          "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
           "iconURL": "assets/icons/com.iteration-mobile.radarbot-free-ww.png"
         }
       ]
