@@ -12,6 +12,8 @@
 					<string>software-package</string>
 					<key>url</key>
 					<string>https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.slicingdice.game-1.1.0/RuTube.ipa</string>
+					<key>file-size</key>
+					<integer>35875020</integer>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -23,7 +25,7 @@
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>RuTube </string>
+				<string>RuTube</string>
 				<key>file-size</key>
 				<integer>35875020</integer>
 			</dict>
