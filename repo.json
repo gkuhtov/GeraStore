@@ -282,12 +282,12 @@
       "appVersion": "2.0.1",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.sm.FlowTime.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
-      "appDescription": "⚙️Особенности⚙️\n\n•Переводы по номеру телефона.\n•Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+      "appDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет управлять картами и счетами, совершать переводы, оплачивать покупки и услуги прямо с iPhone.",
       "name": "Сириус",
       "bundleIdentifier": "com.sm.FlowTime",
-      "developerName": "GK",
+      "developerName": "ГЕРЫЧ",
       "subtitle": "Банковское приложение ВТБ для iPhone.",
-      "localizedDescription": "⚙️Особенности⚙️\n\n•Переводы по номеру телефона.\n•Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет управлять картами и счетами, совершать переводы, оплачивать покупки и услуги прямо с iPhone.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.sm.FlowTime.png",
       "version": "2.0.1",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.sm.FlowTime-2.0.1/default.ipa",
@@ -308,7 +308,7 @@
           "human_file_size": "361.7 MB",
           "appPlist": "https://gkuht.github.io/GeraStore/plist/com.sm.FlowTime.plist",
           "category": "Финансы",
-          "localizedDescription": "⚙️Особенности⚙️\n\n•Переводы по номеру телефона.\n•Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет совершать переводы, оплачивать покупки и услуги, управлять картами и контролировать расходы со смартфона.",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Переводы по номеру телефона.\n🩷Недоступно в ❌💙AppStore.\n🩷Оплата покупок и услуг.\n\n💳 ВТБ Онлайн позволяет управлять картами и счетами, совершать переводы, оплачивать покупки и услуги прямо с iPhone.",
           "iconURL": "assets/icons/com.sm.FlowTime.png"
         }
       ]
