@@ -230,47 +230,6 @@
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.tickettothemoon.video.persona.png"
         }
       ]
-    },
-    {
-      "appType": "SELF_SIGN",
-      "category": "Приложения",
-      "appCateIndex": 1,
-      "appUpdateTime": "2026-09-02T02:01:36+0800",
-      "versionDate": "2026-09-01T18:01:36Z",
-      "appName": "GeraKMusic",
-      "appVersion": "GeraK",
-      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.gerak.music.client.png",
-      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerak.music.client-GeraK/GeraKMusic_v5.ipa",
-      "appDescription": "TEST",
-      "name": "GeraKMusic",
-      "bundleIdentifier": "com.gerak.music.client",
-      "developerName": "",
-      "subtitle": "",
-      "localizedDescription": "TEST",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerak.music.client.png",
-      "version": "GeraK",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerak.music.client-GeraK/GeraKMusic_v5.ipa",
-      "size": 4805994,
-      "appSize": 4805994,
-      "fileSize": 4805994,
-      "appFileSize": 4805994,
-      "human_file_size": "4.6 MB",
-      "versions": [
-        {
-          "version": "GeraK",
-          "date": "2026-09-01T18:01:36Z",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerak.music.client-GeraK/GeraKMusic_v5.ipa",
-          "size": 4805994,
-          "appSize": 4805994,
-          "fileSize": 4805994,
-          "appFileSize": 4805994,
-          "human_file_size": "4.6 MB",
-          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerak.music.client.plist",
-          "category": "Приложения",
-          "localizedDescription": "TEST",
-          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerak.music.client.png"
-        }
-      ]
     }
   ]
 }
