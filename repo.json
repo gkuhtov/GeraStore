@@ -77,12 +77,12 @@
       "appVersion": "3.5.2590",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
-      "appDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
+      "appDescription": "⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте деревни.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые миры.",
       "name": "Board Adventure",
       "bundleIdentifier": "com.moonactive.cmboard",
       "developerName": "ГЕРЫЧ",
-      "subtitle": "САБ",
-      "localizedDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
+      "subtitle": "",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте деревни.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые миры.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png",
       "version": "3.5.2590",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.moonactive.cmboard-3.5.2590/Coin.Master.-.Board.Adventure.ipa",
@@ -103,7 +103,7 @@
           "human_file_size": "121.3 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.moonactive.cmboard.plist",
           "category": "Игры",
-          "localizedDescription": "Путешествие по красочным уровням, где Вас ждут загадки, испытания и новые открытия.",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Собирайте монеты и развивайте деревни.\n🩷Атакуйте деревни соперников и совершайте набеги.\n🩷Собирайте карты и завершайте коллекции.\n\n🎲 Бросайте кубики, двигайтесь по игровому полю, развивайте свою деревню и открывайте новые миры.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.moonactive.cmboard.png"
         }
       ]
