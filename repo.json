@@ -36,12 +36,12 @@
       "appVersion": "2.0.0",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
-      "appDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
+      "appDescription": "⚙️Особенности⚙️\n\n🩷Новое приложение, удалённое из ❌💙AppStore.\n🩷Бесконтактная оплата с iPhone через Bluetooth.\n🩷Новые функции и улучшения.\n\n💳 А-Ключ - новое приложение Альфа-Банка для iPhone с поддержкой бесконтактной оплаты.",
       "name": "А-Ключ",
       "bundleIdentifier": "com.kluchapp.prod",
       "developerName": "GK",
       "subtitle": "🇷🇺 Обновлённое приложение Альфа Банка, добавленное в appstore под видом другого приложения \"Холдер\".",
-      "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Новое приложение, удалённое из ❌💙AppStore.\n🩷Бесконтактная оплата с iPhone через Bluetooth.\n🩷Новые функции и улучшения.\n\n💳 А-Ключ - новое приложение Альфа-Банка для iPhone с поддержкой бесконтактной оплаты.",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.kluchapp.prod.png",
       "version": "2.0.0",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.kluchapp.prod-2.0.0/Alfabank.ipa",
@@ -62,7 +62,7 @@
           "human_file_size": "215.2 MB",
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.kluchapp.prod.plist",
           "category": "Финансы",
-          "localizedDescription": "ℹ️ Особенности:\n▎Удалено из AppStore\n▎Версия за май 26",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Новое приложение, удалённое из ❌💙AppStore.\n🩷Бесконтактная оплата с iPhone через Bluetooth.\n🩷Новые функции и улучшения.\n\n💳 А-Ключ - новое приложение Альфа-Банка для iPhone с поддержкой бесконтактной оплаты.",
           "iconURL": "assets/icons/com.kluchapp.prod.png"
         }
       ]
