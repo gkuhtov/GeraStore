@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://gkuhtov.github.io/GeraStore/"><img src="https://img.shields.io/badge/Сайт-GeraStore-8b5cf6?style=for-the-badge&logo=github" alt="Website"></a>
+  <a href="https://gkuhtov.github.io/GeraKStore-Web/#top"><img src="https://img.shields.io/badge/Сайт-GeraStore-8b5cf6?style=for-the-badge&logo=github" alt="Website"></a>
   <a href="https://gkuhtov.github.io/GeraStore/repo.json"><img src="https://img.shields.io/badge/Источник-repo.json-34d399?style=for-the-badge" alt="Source"></a>
   <img src="https://img.shields.io/badge/Лицензия-MIT-blue?style=for-the-badge" alt="License">
 </p>
@@ -65,7 +65,7 @@ https://raw.githubusercontent.com/gkuhtov/GeraStore/main/repo.json
 
 ## Ссылки
 
-- **Сайт источника:** [gkuhtov.github.io/GeraStore](https://gkuhtov.github.io/GeraStore/)
+- **Сайт источника:** [gkuhtov.github.io/GeraStore](https://gkuhtov.github.io/GeraKStore-Web/#top)
 - **repo.json:** [прямая ссылка](https://gkuhtov.github.io/GeraStore/repo.json)
 - **GitHub:** [gkuhtov/GeraStore](https://github.com/gkuhtov/GeraStore)
 
