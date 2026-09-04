@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakstore.test.one-1.0.0/GeraTestOne-1.0.0.ipa</string>
+					<string>https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakstore.test.one-1.1.0/GeraTestOne-1.1.0.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -19,13 +19,13 @@
 				<key>bundle-identifier</key>
 				<string>com.gerakstore.test.one</string>
 				<key>bundle-version</key>
-				<string>1.0.0</string>
+				<string>1.1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
 				<string>Gera Test One</string>
 				<key>file-size</key>
-				<integer>126346</integer>
+				<integer>180926</integer>
 			</dict>
 		</dict>
 	</array>
