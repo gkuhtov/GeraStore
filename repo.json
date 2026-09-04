@@ -5,9 +5,9 @@
   "sourceExportEnable": true,
   "sourceLinkTitle": "GitHub",
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
-  "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon_v2.png",
+  "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-09-02T02:01:36+0800",
+  "sourceUpdateTime": "2026-09-04T17:51:47+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -351,6 +351,47 @@
           "category": "Навигация",
           "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Без рекламы.\n🩷Визуальная интеграция с другими приложениями.\n🩷Работа в фоновом режиме.\n\n🚗 Radarbot предупреждает о камерах контроля и опасных участках дороги. Приложение работает в фоне и может использоваться вместе с навигатором.",
           "iconURL": "assets/icons/com.iteration-mobile.radarbot-free-ww.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "category": "Фото и видео",
+      "appCateIndex": 7,
+      "appUpdateTime": "2026-09-04T17:51:47+0800",
+      "versionDate": "2026-09-04T09:51:47Z",
+      "appName": "BeautyCam",
+      "appVersion": "12.6.60",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.meitu.myxj.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.meitu.myxj-12.6.60/BeautyCam-ipaomtk.com.ipa",
+      "appDescription": "⚙️Особенности PRO⚙️\n\n🩷Премиум-функции.\n🩷Расширенные инструменты ретуши.\n🩷Фильтры и эффекты без ограничений.\n\n📸 BeautyCam - приложение для обработки фотографий и селфи с инструментами ретуши, фильтрами, эффектами и улучшением внешности. Некотрые функции ai не работают.",
+      "name": "BeautyCam",
+      "bundleIdentifier": "com.meitu.myxj",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Премиум-функции.\n🩷Расширенные инструменты ретуши.\n🩷Фильтры и эффекты без ограничений.\n\n📸 BeautyCam - приложение для обработки фотографий и селфи с инструментами ретуши, фильтрами, эффектами и улучшением внешности. Некотрые функции ai не работают.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.meitu.myxj.png",
+      "version": "12.6.60",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.meitu.myxj-12.6.60/BeautyCam-ipaomtk.com.ipa",
+      "size": 230360881,
+      "appSize": 230360881,
+      "fileSize": 230360881,
+      "appFileSize": 230360881,
+      "human_file_size": "219.7 MB",
+      "versions": [
+        {
+          "version": "12.6.60",
+          "date": "2026-09-04T09:51:47Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.meitu.myxj-12.6.60/BeautyCam-ipaomtk.com.ipa",
+          "size": 230360881,
+          "appSize": 230360881,
+          "fileSize": 230360881,
+          "appFileSize": 230360881,
+          "human_file_size": "219.7 MB",
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.meitu.myxj.plist",
+          "category": "Фото и видео",
+          "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Премиум-функции.\n🩷Расширенные инструменты ретуши.\n🩷Фильтры и эффекты без ограничений.\n\n📸 BeautyCam - приложение для обработки фотографий и селфи с инструментами ретуши, фильтрами, эффектами и улучшением внешности. Некотрые функции ai не работают.",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.meitu.myxj.png"
         }
       ]
     }
