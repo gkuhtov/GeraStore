@@ -498,49 +498,6 @@
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.app.home.vault.prod.png"
         }
       ]
-    },
-    {
-      "appType": "SELF_SIGN",
-      "category": "Музыка",
-      "appCateIndex": 8,
-      "appUpdateTime": "2026-09-05T02:13:18+0800",
-      "versionDate": "2026-09-04T18:13:18Z",
-      "appName": "GeraKMusic",
-      "appVersion": "777",
-      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png",
-      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
-      "appDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
-      "name": "GeraKMusic",
-      "bundleIdentifier": "com.gerakmusic.app",
-      "developerName": "ГЕРЫЧ",
-      "subtitle": "",
-      "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
-      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png",
-      "version": "777",
-      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
-      "size": 5046195,
-      "appSize": 5046195,
-      "fileSize": 5046195,
-      "appFileSize": 5046195,
-      "human_file_size": "4.8 MB",
-      "minimumOSVersion": "10.0",
-      "versions": [
-        {
-          "version": "777",
-          "date": "2026-09-04T18:13:18Z",
-          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
-          "size": 5046195,
-          "appSize": 5046195,
-          "fileSize": 5046195,
-          "appFileSize": 5046195,
-          "human_file_size": "4.8 MB",
-          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerakmusic.app.plist",
-          "minimumOSVersion": "10.0",
-          "category": "Музыка",
-          "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
-          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png"
-        }
-      ]
     }
   ]
 }
