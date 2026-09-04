@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-09-04T17:51:47+0800",
+  "sourceUpdateTime": "2026-09-04T19:00:16+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -392,6 +392,47 @@
           "category": "Фото и видео",
           "localizedDescription": "⚙️Особенности PRO⚙️\n\n🩷Премиум-функции.\n🩷Расширенные инструменты ретуши.\n🩷Фильтры и эффекты без ограничений.\n\n📸 BeautyCam - приложение для обработки фотографий и селфи с инструментами ретуши, фильтрами, эффектами и улучшением внешности. Некотрые функции ai не работают.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.meitu.myxj.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "category": "Финансы",
+      "appCateIndex": 11,
+      "appUpdateTime": "2026-09-04T19:00:16+0800",
+      "versionDate": "2026-09-04T11:00:16Z",
+      "appName": "Яндекс Банк",
+      "appVersion": "0.234.4",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.yandex.fintech.bank-app.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.yandex.fintech.bank-app-0.234.4/v0.234.4.ipa",
+      "appDescription": "⚙️Особенности⚙️\n\n🩷Оплата через Пэй и СБП.\n🩷Карта Пэй и счета разных банков.\n🩷Кешбэк баллами Плюса и персональные предложения.\n\n💳 Яндекс Пэй объединяет карты и счета в одном приложении, позволяет быстро оплачивать покупки и получать выгоду в сервисах Яндекса и у партнёров.",
+      "name": "Яндекс Банк",
+      "bundleIdentifier": "com.yandex.fintech.bank-app",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "⚙️Особенности⚙️\n\n🩷Оплата через Пэй и СБП.\n🩷Карта Пэй и счета разных банков.\n🩷Кешбэк баллами Плюса и персональные предложения.\n\n💳 Яндекс Пэй объединяет карты и счета в одном приложении, позволяет быстро оплачивать покупки и получать выгоду в сервисах Яндекса и у партнёров.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.yandex.fintech.bank-app.png",
+      "version": "0.234.4",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.yandex.fintech.bank-app-0.234.4/v0.234.4.ipa",
+      "size": 54344567,
+      "appSize": 54344567,
+      "fileSize": 54344567,
+      "appFileSize": 54344567,
+      "human_file_size": "51.8 MB",
+      "versions": [
+        {
+          "version": "0.234.4",
+          "date": "2026-09-04T11:00:16Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.yandex.fintech.bank-app-0.234.4/v0.234.4.ipa",
+          "size": 54344567,
+          "appSize": 54344567,
+          "fileSize": 54344567,
+          "appFileSize": 54344567,
+          "human_file_size": "51.8 MB",
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.yandex.fintech.bank-app.plist",
+          "category": "Финансы",
+          "localizedDescription": "⚙️Особенности⚙️\n\n🩷Оплата через Пэй и СБП.\n🩷Карта Пэй и счета разных банков.\n🩷Кешбэк баллами Плюса и персональные предложения.\n\n💳 Яндекс Пэй объединяет карты и счета в одном приложении, позволяет быстро оплачивать покупки и получать выгоду в сервисах Яндекса и у партнёров.",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.yandex.fintech.bank-app.png"
         }
       ]
     }
