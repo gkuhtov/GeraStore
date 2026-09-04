@@ -552,12 +552,12 @@
       "appVersion": "777",
       "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png",
       "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
-      "appDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА",
+      "appDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
       "name": "GeraKMusic",
       "bundleIdentifier": "com.gerakmusic.app",
       "developerName": "ГЕРЫЧ",
       "subtitle": "",
-      "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА",
+      "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
       "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png",
       "version": "777",
       "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app-777/GeraKMusic.ipa",
@@ -580,7 +580,7 @@
           "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerakmusic.app.plist",
           "minimumOSVersion": "10.0",
           "category": "Музыка",
-          "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА",
+          "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png"
         }
       ]
