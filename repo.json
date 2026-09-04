@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-09-05T02:13:18+0800",
+  "sourceUpdateTime": "2026-09-05T02:24:43+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -539,6 +539,49 @@
           "category": "Музыка",
           "localizedDescription": "АХУЕТЬ, ЧЕ ЗА ТЕМА, ОТВЕЧАЮ!!!",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "category": "Музыка",
+      "appCateIndex": 8,
+      "appUpdateTime": "2026-09-05T02:24:43+0800",
+      "versionDate": "2026-09-04T18:24:42Z",
+      "appName": "GeraKMusic",
+      "appVersion": "GeraK",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.v2.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app.v2-GeraK/GeraKMusic_v4.ipa",
+      "appDescription": "ТЕСТ ЕБУЧИЙ",
+      "name": "GeraKMusic",
+      "bundleIdentifier": "com.gerakmusic.app.v2",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "ТЕСТ ЕБУЧИЙ",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.v2.png",
+      "version": "GeraK",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app.v2-GeraK/GeraKMusic_v4.ipa",
+      "size": 4814363,
+      "appSize": 4814363,
+      "fileSize": 4814363,
+      "appFileSize": 4814363,
+      "human_file_size": "4.6 MB",
+      "minimumOSVersion": "10.0",
+      "versions": [
+        {
+          "version": "GeraK",
+          "date": "2026-09-04T18:24:42Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-com.gerakmusic.app.v2-GeraK/GeraKMusic_v4.ipa",
+          "size": 4814363,
+          "appSize": 4814363,
+          "fileSize": 4814363,
+          "appFileSize": 4814363,
+          "human_file_size": "4.6 MB",
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/com.gerakmusic.app.v2.plist",
+          "minimumOSVersion": "10.0",
+          "category": "Музыка",
+          "localizedDescription": "ТЕСТ ЕБУЧИЙ",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.gerakmusic.app.v2.png"
         }
       ]
     }
