@@ -7,7 +7,7 @@
   "sourceLinkUrl": "https://github.com/gkuhtov/GeraStore",
   "sourceImage": "https://gkuhtov.github.io/GeraStore/icons/app_icon.png",
   "sourceDescription": "Каталог IPA приложений для GBox.",
-  "sourceUpdateTime": "2026-09-05T02:24:43+0800",
+  "sourceUpdateTime": "2026-09-05T16:03:59+0800",
   "appCategories": [
     "Игры",
     "Приложения",
@@ -496,6 +496,49 @@
           "category": "Финансы",
           "localizedDescription": "⚙️Особенности⚙️\n\n🩷Мгновенная оплата через Турбо QR.\n🩷Автопополнение карты с другого банка.\n🩷Оплата транспортных карт и заправок.\n\n⛽ Газпромбанк - мобильное приложение для управления финансами, оплаты покупок, транспорта и повседневных услуг с удобной аналитикой расходов.",
           "iconURL": "https://gkuhtov.github.io/GeraStore/icons/com.app.home.vault.prod.png"
+        }
+      ]
+    },
+    {
+      "appType": "SELF_SIGN",
+      "category": "Музыка",
+      "appCateIndex": 8,
+      "appUpdateTime": "2026-09-05T16:03:59+0800",
+      "versionDate": "2026-09-05T08:03:59Z",
+      "appName": "Yandex.Music",
+      "appVersion": "787",
+      "appImage": "https://gkuhtov.github.io/GeraStore/icons/ru.yandex.mobile.music.png",
+      "appPackage": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-ru.yandex.mobile.music-787/_GeraKStore.ipa",
+      "appDescription": "⚙️Особенности МОДА⚙️\n\n🩷Премиум-функции разблокированы.\n🩷Без рекламы.\n🩷Офлайн-прослушивание и высокое качество звука.\n\n🎵 Яндекс Музыка - миллионы треков, подкастов и аудиокниг, персональные рекомендации «Моя волна» и музыка без ограничений.",
+      "name": "Yandex.Music",
+      "bundleIdentifier": "ru.yandex.mobile.music",
+      "developerName": "ГЕРЫЧ",
+      "subtitle": "",
+      "localizedDescription": "⚙️Особенности МОДА⚙️\n\n🩷Премиум-функции разблокированы.\n🩷Без рекламы.\n🩷Офлайн-прослушивание и высокое качество звука.\n\n🎵 Яндекс Музыка - миллионы треков, подкастов и аудиокниг, персональные рекомендации «Моя волна» и музыка без ограничений.",
+      "iconURL": "https://gkuhtov.github.io/GeraStore/icons/ru.yandex.mobile.music.png",
+      "version": "787",
+      "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-ru.yandex.mobile.music-787/_GeraKStore.ipa",
+      "size": 119392861,
+      "appSize": 119392861,
+      "fileSize": 119392861,
+      "appFileSize": 119392861,
+      "human_file_size": "113.9 MB",
+      "minimumOSVersion": "10.0",
+      "versions": [
+        {
+          "version": "787",
+          "date": "2026-09-05T08:03:59Z",
+          "downloadURL": "https://github.com/gkuhtov/GeraStore/releases/download/gerastore-ru.yandex.mobile.music-787/_GeraKStore.ipa",
+          "size": 119392861,
+          "appSize": 119392861,
+          "fileSize": 119392861,
+          "appFileSize": 119392861,
+          "human_file_size": "113.9 MB",
+          "appPlist": "https://gkuhtov.github.io/GeraStore/plist/ru.yandex.mobile.music.plist",
+          "minimumOSVersion": "10.0",
+          "category": "Музыка",
+          "localizedDescription": "⚙️Особенности МОДА⚙️\n\n🩷Премиум-функции разблокированы.\n🩷Без рекламы.\n🩷Офлайн-прослушивание и высокое качество звука.\n\n🎵 Яндекс Музыка - миллионы треков, подкастов и аудиокниг, персональные рекомендации «Моя волна» и музыка без ограничений.",
+          "iconURL": "https://gkuhtov.github.io/GeraStore/icons/ru.yandex.mobile.music.png"
         }
       ]
     }
